@@ -21,7 +21,7 @@ export const Process = () => (
       <motion.div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5" variants={staggerContainer} initial="hidden" whileInView="show" viewport={viewport}>
         {steps.map((s) => (
           <motion.div key={s.nr} variants={staggerItem} className="relative rounded-2xl border bg-card p-6 shadow-soft">
-            <div className="mb-4 text-3xl font-black" style={{ color: "hsl(28 85% 52% / 0.3)" }}>{s.nr}</div>
+            <div className="mb-4 text-3xl font-black" style={{ color: "hsl(214 82% 56% / 0.3)" }}>{s.nr}</div>
             <h3 className="text-sm font-bold text-foreground">{s.title}</h3>
             <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
           </motion.div>

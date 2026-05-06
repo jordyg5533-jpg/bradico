@@ -91,7 +91,7 @@ export const ChatBot = () => {
           <div className="flex items-center justify-between px-4 py-3 shrink-0" style={{ background: "hsl(215 40% 14%)" }}>
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="h-9 w-9 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: "hsl(28 85% 52%)", color: "#fff" }}>T</div>
+                <div className="h-9 w-9 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: "hsl(214 82% 56%)", color: "#fff" }}>T</div>
                 <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2" style={{ background: "#4ade80", borderColor: "hsl(215 40% 14%)" }} />
               </div>
               <div>
@@ -114,7 +114,7 @@ export const ChatBot = () => {
             {showInput && (
               <div className="flex gap-2">
                 <input ref={inputRef} type={step === "telefoon" ? "tel" : "text"} value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSubmit()} placeholder={placeholder} className="flex-1 rounded-xl border border-border bg-secondary px-3 py-2.5 text-sm outline-none focus:border-accent transition-colors" />
-                <button onClick={handleSubmit} className="rounded-xl px-3 py-2.5 text-white transition-opacity hover:opacity-90" style={{ background: "hsl(28 85% 52%)" }} aria-label="Verstuur"><Send className="h-4 w-4" /></button>
+                <button onClick={handleSubmit} className="rounded-xl px-3 py-2.5 text-white transition-opacity hover:opacity-90" style={{ background: "hsl(214 82% 56%)" }} aria-label="Verstuur"><Send className="h-4 w-4" /></button>
               </div>
             )}
             {step === "done" && <p className="text-center text-xs text-muted-foreground py-1">We contacteren u zo snel mogelijk.</p>}

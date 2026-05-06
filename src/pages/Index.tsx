@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { TrustBar } from "@/components/TrustBar";
 import { Services } from "@/components/Services";
 import { WhyBradico } from "@/components/WhyBradico";
 import { Process } from "@/components/Process";
@@ -22,6 +23,7 @@ const Index = () => (
       <Navbar />
       <main>
         <Hero />
+        <TrustBar />
         <Services />
         <WhyBradico />
         <Process />

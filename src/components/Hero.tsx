@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Phone, Check } from "lucide-react";
+import { Phone, Check, ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 
@@ -43,8 +43,11 @@ function AnimatedStat({ n, label }: { n: string; label: string }) {
 
 export const Hero = () => (
   <section id="top" className="relative overflow-hidden pb-0 pt-20 md:pt-24" aria-label="Hero sectie">
-    <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #070c18 0%, #0e1e35 50%, #152844 100%)" }} aria-hidden />
-    <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full opacity-20 blur-3xl" style={{ background: "hsl(28 85% 52%)" }} aria-hidden />
+    <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #050c1a 0%, #0c1e38 50%, #122444 100%)" }} aria-hidden />
+    {/* blue glow top-right */}
+    <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full opacity-15 blur-3xl" style={{ background: "hsl(214 82% 56%)" }} aria-hidden />
+    {/* subtle blue glow bottom-left */}
+    <div className="pointer-events-none absolute -bottom-20 -left-20 h-[350px] w-[350px] rounded-full opacity-10 blur-3xl" style={{ background: "hsl(200 85% 60%)" }} aria-hidden />
 
     <div className="container-x relative">
       <div className="grid items-center gap-10 pb-12 lg:grid-cols-2 lg:gap-20 lg:pb-0">
@@ -62,7 +65,7 @@ export const Hero = () => (
 
           <h1 className="max-w-[22ch] text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-[3.2rem]">
             Bedrijfshal of loods laten bouwen?{" "}
-            <span style={{ background: "linear-gradient(135deg, hsl(28 85% 52%) 0%, hsl(22 88% 58%) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+            <span style={{ background: "linear-gradient(130deg, hsl(214 82% 72%) 0%, hsl(200 88% 65%) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
               Bradico regelt het.
             </span>
           </h1>
@@ -82,23 +85,33 @@ export const Hero = () => (
           </motion.div>
 
           <motion.div className="mt-8 flex flex-wrap gap-3" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
-            <a href="tel:+32472812952" className="inline-flex items-center gap-2.5 rounded-xl px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:brightness-110" style={{ background: "hsl(28 85% 52%)" }}>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2.5 rounded-xl px-6 py-3.5 text-sm font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02]"
+              style={{ background: "linear-gradient(135deg, hsl(214 82% 54%) 0%, hsl(220 85% 46%) 100%)", boxShadow: "0 4px 20px -4px hsl(214 82% 56% / 0.5)" }}
+            >
+              Gratis offerte aanvragen
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <a href="tel:+32472812952" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/15">
               <Phone className="h-4 w-4" />
               +32 472 81 29 52
             </a>
-            <a href="#contact" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/15">
-              Gratis offerte aanvragen
-            </a>
           </motion.div>
+
+          {/* micro trust */}
+          <p className="mt-4 text-xs text-white/40">Geen verplichtingen · Reactie binnen 24u · 200+ tevreden klanten</p>
         </motion.div>
 
         <motion.div className="lg:pb-10" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.1 }}>
           <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
             <img src="/hero-bradico.webp" alt="Bradico bedrijfshal staalconstructie Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
+            {/* gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-5">
               <span className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                Van ontwerp tot oplevering
+                Van ontwerp tot sleutelklare oplevering
               </span>
             </div>
           </div>
@@ -112,7 +125,7 @@ export const Hero = () => (
 
     <div className="relative mt-12 h-14 overflow-hidden lg:mt-0">
       <svg viewBox="0 0 1440 56" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
-        <path d="M0,56 L0,28 C360,56 1080,0 1440,28 L1440,56 Z" fill="hsl(30 10% 97%)" />
+        <path d="M0,56 L0,28 C360,56 1080,0 1440,28 L1440,56 Z" fill="hsl(216 14% 97%)" />
       </svg>
     </div>
   </section>

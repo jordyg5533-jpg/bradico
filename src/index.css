@@ -2,44 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Bradico Design System — industrial steel + orange */
+/* Bradico Design System — industrial steel blue */
 
 @layer base {
   :root {
-    --background: 30 10% 97%;
+    --background: 216 14% 97%;
     --foreground: 215 25% 12%;
     --card: 0 0% 100%;
     --card-foreground: 215 25% 12%;
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 12%;
     --primary: 215 40% 14%;
-    --primary-foreground: 30 10% 97%;
+    --primary-foreground: 216 14% 97%;
     --primary-glow: 215 35% 28%;
-    --accent: 28 85% 52%;
+    --accent: 214 82% 56%;
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 28 90% 62%;
+    --accent-glow: 214 82% 68%;
     --secondary: 215 15% 93%;
     --secondary-foreground: 215 25% 12%;
     --muted: 215 10% 90%;
     --muted-foreground: 215 15% 42%;
     --dark: 215 35% 7%;
-    --dark-foreground: 30 10% 97%;
+    --dark-foreground: 216 14% 97%;
     --destructive: 0 84% 55%;
-    --destructive-foreground: 30 10% 97%;
-    --border: 215 15% 86%;
-    --input: 215 15% 86%;
-    --ring: 215 40% 14%;
+    --destructive-foreground: 216 14% 97%;
+    --border: 215 15% 88%;
+    --input: 215 15% 88%;
+    --ring: 214 82% 56%;
     --radius: 0.75rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(215 45% 8%) 0%, hsl(215 40% 16%) 60%, hsl(215 35% 22%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 50% 7%) 0%, hsl(215 45% 13%) 55%, hsl(215 40% 19%) 100%);
     --gradient-dark: linear-gradient(180deg, hsl(215 40% 9%) 0%, hsl(215 35% 14%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(28 85% 52%) 0%, hsl(22 88% 48%) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(30 10% 98%) 0%, hsl(215 10% 94%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(214 82% 52%) 0%, hsl(220 85% 46%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(216 14% 99%) 0%, hsl(215 18% 94%) 100%);
 
-    --shadow-elegant: 0 20px 60px -20px hsl(215 40% 14% / 0.25);
-    --shadow-glow: 0 0 50px hsl(28 85% 52% / 0.30);
-    --shadow-card: 0 8px 30px -12px hsl(215 35% 18% / 0.15);
-    --shadow-soft: 0 2px 10px -2px hsl(215 35% 18% / 0.08);
+    --shadow-elegant: 0 20px 60px -20px hsl(215 40% 14% / 0.28);
+    --shadow-glow: 0 0 50px hsl(214 82% 56% / 0.22);
+    --shadow-card: 0 8px 30px -12px hsl(215 35% 18% / 0.14);
+    --shadow-soft: 0 2px 10px -2px hsl(215 35% 18% / 0.07);
 
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
@@ -51,25 +51,25 @@
     --sidebar-accent: 240 5% 96%;
     --sidebar-accent-foreground: 240 6% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 214 82% 56%;
   }
 
   .dark {
     --background: 215 35% 7%;
-    --foreground: 30 10% 97%;
+    --foreground: 216 14% 97%;
     --card: 215 35% 9%;
-    --card-foreground: 30 10% 97%;
-    --primary: 30 10% 97%;
+    --card-foreground: 216 14% 97%;
+    --primary: 216 14% 97%;
     --primary-foreground: 215 40% 14%;
     --secondary: 215 25% 14%;
-    --secondary-foreground: 30 10% 97%;
+    --secondary-foreground: 216 14% 97%;
     --muted: 215 25% 14%;
     --muted-foreground: 215 15% 65%;
-    --accent: 28 85% 55%;
+    --accent: 214 82% 60%;
     --accent-foreground: 0 0% 100%;
     --border: 215 25% 18%;
     --input: 215 25% 18%;
-    --ring: 28 85% 55%;
+    --ring: 214 82% 60%;
   }
 }
 
@@ -103,6 +103,24 @@
   .container-x {
     @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;
   }
+  .btn-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    background: var(--gradient-accent);
+    box-shadow: 0 4px 20px -4px hsl(214 82% 56% / 0.45);
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .btn-accent:hover {
+    filter: brightness(1.08);
+    box-shadow: 0 8px 28px -4px hsl(214 82% 56% / 0.55);
+    transform: translateY(-1px);
+  }
 }
 
 @keyframes fade-up {
@@ -112,6 +130,10 @@
 @keyframes float-slow {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
+}
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to { background-position: 200% center; }
 }
 
 .animate-fade-up { animation: fade-up 0.7s var(--ease-out) both; }

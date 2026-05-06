@@ -10,23 +10,53 @@ const items = [
 ];
 
 export const WhyBradico = () => (
-  <section className="py-20" aria-label="Waarom Bradico">
-    <div className="container-x">
+  <section className="relative overflow-hidden py-24" aria-label="Waarom Bradico">
+    {/* dark background */}
+    <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #070e1e 0%, #0c1c32 60%, #112239 100%)" }} aria-hidden />
+    <div className="pointer-events-none absolute -right-40 -top-20 h-[400px] w-[400px] rounded-full opacity-10 blur-3xl" style={{ background: "hsl(214 82% 56%)" }} aria-hidden />
+
+    <div className="container-x relative">
       <motion.div className="text-center mb-14" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewport} transition={{ duration: 0.5 }}>
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">Waarom Bradico</span>
-        <h2 className="mt-3 text-3xl font-black text-foreground md:text-4xl">Wat ons onderscheidt</h2>
+        <span className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: "hsl(214 82% 70%)" }}>Waarom Bradico</span>
+        <h2 className="mt-3 text-3xl font-black text-white md:text-4xl">Wat ons onderscheidt</h2>
+        <p className="mt-4 max-w-xl mx-auto text-white/60 text-sm">Geen verborgen kosten, geen gecoördineer. Gewoon degelijk werk, duidelijke afspraken en één aanspreekpunt.</p>
       </motion.div>
 
-      <motion.div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" variants={staggerContainer} initial="hidden" whileInView="show" viewport={viewport}>
+      <motion.div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4" variants={staggerContainer} initial="hidden" whileInView="show" viewport={viewport}>
         {items.map((item) => (
-          <motion.div key={item.title} variants={staggerItem} className="rounded-2xl border bg-card p-6 shadow-soft">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
-              <item.icon className="h-6 w-6 text-accent" />
+          <motion.div
+            key={item.title}
+            variants={staggerItem}
+            className="rounded-2xl border p-6 transition-all hover:border-accent/40"
+            style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.08)" }}
+          >
+            <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.15)" }}>
+              <item.icon className="h-5 w-5 text-accent" />
             </div>
-            <h3 className="text-base font-bold text-foreground">{item.title}</h3>
-            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+            <h3 className="text-base font-bold text-white">{item.title}</h3>
+            <p className="mt-2 text-sm text-white/55 leading-relaxed">{item.desc}</p>
           </motion.div>
         ))}
+      </motion.div>
+
+      {/* bottom CTA strip */}
+      <motion.div
+        className="mt-14 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={viewport}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <a
+          href="#contact"
+          className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white transition-all hover:brightness-110"
+          style={{ background: "linear-gradient(135deg, hsl(214 82% 54%) 0%, hsl(220 85% 46%) 100%)", boxShadow: "0 4px 20px -4px hsl(214 82% 56% / 0.5)" }}
+        >
+          Gratis offerte aanvragen
+        </a>
+        <a href="tel:+32472812952" className="text-sm font-semibold text-white/70 hover:text-white transition-colors">
+          of bel +32 472 81 29 52
+        </a>
       </motion.div>
     </div>
   </section>

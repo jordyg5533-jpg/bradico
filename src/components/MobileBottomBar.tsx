@@ -25,7 +25,7 @@ export const MobileBottomBar = () => {
           <Phone className="h-4 w-4 text-accent" />
           Bel ons
         </a>
-        <a href="#contact" className="flex flex-1 items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white shadow-lg active:scale-95" style={{ background: "hsl(28 85% 52%)" }}>
+        <a href="#contact" className="flex flex-1 items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white shadow-lg active:scale-95" style={{ background: "hsl(214 82% 56%)" }}>
           <Send className="h-4 w-4" />
           Gratis offerte
         </a>

@@ -49,7 +49,7 @@ export const Footer = () => (
             <li className="font-semibold text-white/90">Ma–vr: 7u – 17u</li>
             <li className="text-white/50 text-xs">Zaterdag op afspraak</li>
           </ul>
-          <a href="/#contact" className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(28 85% 52%)" }}>
+          <a href="/#contact" className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(214 82% 56%)" }}>
             Gratis offerte aanvragen
           </a>
           <a href="/realisaties" className="mt-2 inline-flex w-full items-center justify-center rounded-xl border border-white/15 px-4 py-3 text-sm font-semibold text-white/80 transition-smooth hover:border-white/30 hover:text-white">

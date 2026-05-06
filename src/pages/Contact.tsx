@@ -44,8 +44,8 @@ export default function Contact() {
                 <h2 className="text-2xl font-black text-foreground mb-8">Contactgegevens</h2>
                 <div className="space-y-5">
                   <div className="flex items-start gap-4 rounded-2xl border bg-card p-5 shadow-soft">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
-                      <Phone className="h-5 w-5" style={{ color: "hsl(28 85% 52%)" }} />
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
+                      <Phone className="h-5 w-5" style={{ color: "hsl(214 82% 56%)" }} />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Telefoon</p>
@@ -54,8 +54,8 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-4 rounded-2xl border bg-card p-5 shadow-soft">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
-                      <Mail className="h-5 w-5" style={{ color: "hsl(28 85% 52%)" }} />
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
+                      <Mail className="h-5 w-5" style={{ color: "hsl(214 82% 56%)" }} />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">E-mail</p>
@@ -64,8 +64,8 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-4 rounded-2xl border bg-card p-5 shadow-soft">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
-                      <MapPin className="h-5 w-5" style={{ color: "hsl(28 85% 52%)" }} />
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
+                      <MapPin className="h-5 w-5" style={{ color: "hsl(214 82% 56%)" }} />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Adres</p>
@@ -75,8 +75,8 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start gap-4 rounded-2xl border bg-card p-5 shadow-soft">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
-                      <Clock className="h-5 w-5" style={{ color: "hsl(28 85% 52%)" }} />
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
+                      <Clock className="h-5 w-5" style={{ color: "hsl(214 82% 56%)" }} />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Bereikbaarheid</p>

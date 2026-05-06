@@ -22,7 +22,7 @@ export const ContactCTA = () => (
             <h3 className="text-lg font-bold text-foreground">Contactgegevens</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
+                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
                   <Phone className="h-4 w-4 text-accent" />
                 </div>
                 <div>
@@ -31,7 +31,7 @@ export const ContactCTA = () => (
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
+                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
                   <Mail className="h-4 w-4 text-accent" />
                 </div>
                 <div>
@@ -40,7 +40,7 @@ export const ContactCTA = () => (
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
+                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
                   <MapPin className="h-4 w-4 text-accent" />
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export const ContactCTA = () => (
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(28 85% 52% / 0.12)" }}>
+                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl" style={{ background: "hsl(214 82% 56% / 0.12)" }}>
                   <Clock className="h-4 w-4 text-accent" />
                 </div>
                 <div>
@@ -61,13 +61,24 @@ export const ContactCTA = () => (
             </ul>
           </div>
 
-          <div className="rounded-2xl p-6 text-white" style={{ background: "linear-gradient(135deg, hsl(215 40% 14%), hsl(215 35% 22%))" }}>
-            <h3 className="text-lg font-bold">Offerte binnen 48 uur</h3>
-            <p className="mt-2 text-sm text-white/75">Na uw aanvraag plannen we een terreinbezoek in. Binnen 48 uur heeft u een volledige, vaste-prijs offerte in uw mailbox.</p>
-            <ul className="mt-4 space-y-2">
-              {["Geen verborgen kosten", "Gratis terreinbezoek", "Vaste prijs — altijd"].map((item) => (
-                <li key={item} className="flex items-center gap-2 text-sm text-white/85">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+          <div className="rounded-2xl overflow-hidden text-white" style={{ background: "linear-gradient(135deg, #06101f 0%, #0c1e38 60%, #112540 100%)" }}>
+            <div className="p-6 border-b border-white/8">
+              <p className="text-xs font-bold uppercase tracking-[0.18em]" style={{ color: "hsl(214 82% 70%)" }}>Bradico Garantie</p>
+              <h3 className="mt-2 text-xl font-black text-white leading-snug">Vaste prijs. Altijd.<br />Geen verrassingen.</h3>
+              <p className="mt-2 text-sm text-white/65 leading-relaxed">Na uw aanvraag plannen we een gratis terreinbezoek. Binnen 48 uur heeft u een volledige vaste-prijs offerte — geen meerwerken, geen bijbestellingen.</p>
+            </div>
+            <ul className="p-6 space-y-3">
+              {[
+                "Gratis terreinbezoek",
+                "Offerte binnen 48 uur",
+                "Vaste prijs — geen meerwerken",
+                "Vergunning inbegrepen",
+                "Sleutelklare oplevering",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2.5 text-sm text-white/80">
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full" style={{ background: "hsl(214 82% 56% / 0.25)" }}>
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                  </span>
                   {item}
                 </li>
               ))}

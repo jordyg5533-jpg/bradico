@@ -80,7 +80,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
                 </h1>
                 <p className="mt-4 text-base text-white/70 leading-relaxed">{city.intro}</p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="#contact" className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(28 85% 52%)" }}>
+                  <a href="#contact" className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(214 82% 56%)" }}>
                     Gratis offerte aanvragen
                   </a>
                   <a href="tel:+32472812952" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15">

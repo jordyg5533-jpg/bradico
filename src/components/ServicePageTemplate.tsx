@@ -93,7 +93,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
                 <h1 className="text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl">{service.h1}</h1>
                 <p className="mt-4 text-base text-white/70 leading-relaxed">{service.tagline}</p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="#contact" className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(28 85% 52%)" }}>
+                  <a href="#contact" className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(214 82% 56%)" }}>
                     Gratis offerte aanvragen
                   </a>
                   <a href="tel:+32472812952" className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/15">
@@ -142,7 +142,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
             <motion.div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5" variants={staggerContainer} initial="hidden" whileInView="show" viewport={viewport}>
               {service.steps.map((s) => (
                 <motion.div key={s.nr} variants={staggerItem} className="rounded-2xl border bg-card p-5 shadow-soft">
-                  <div className="mb-3 text-2xl font-black" style={{ color: "hsl(28 85% 52% / 0.3)" }}>{s.nr}</div>
+                  <div className="mb-3 text-2xl font-black" style={{ color: "hsl(214 82% 56% / 0.3)" }}>{s.nr}</div>
                   <h3 className="text-sm font-bold text-foreground">{s.title}</h3>
                   <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
                 </motion.div>
