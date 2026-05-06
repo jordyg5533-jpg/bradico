@@ -58,9 +58,9 @@ export const Hero = () => (
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/80 backdrop-blur-sm">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
-            Erkend aannemer · Limburg & Antwerpen
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-sm">
+            <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-accent" />
+            Erkend aannemer · Limburg
           </div>
 
           <h1 className="max-w-[22ch] text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-[3.2rem]">

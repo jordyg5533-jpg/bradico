@@ -138,3 +138,12 @@
 
 .animate-fade-up { animation: fade-up 0.7s var(--ease-out) both; }
 .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+/* hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
