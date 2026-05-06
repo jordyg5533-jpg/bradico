@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  p {
+    font-size: clamp(0.9rem, 2.5vw, 1.125rem);
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    padding: 0.75rem 1.5rem;
+  }
+}
