@@ -60,7 +60,10 @@ export const Footer = () => (
       </div>
 
       <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center">
-        <div>© {new Date().getFullYear()} Bradico. Alle rechten voorbehouden.</div>
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-4">
+          <span>© {new Date().getFullYear()} Bradico. Alle rechten voorbehouden.</span>
+          <span className="text-white/30">BTW: BE1005.526.348</span>
+        </div>
         <div className="flex gap-5">
           <a href="#" className="hover:text-accent transition-smooth">Privacy</a>
           <a href="#" className="hover:text-accent transition-smooth">Cookies</a>
