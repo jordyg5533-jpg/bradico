@@ -105,13 +105,13 @@ export const Hero = () => (
 
         <motion.div className="lg:pb-10" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.1 }}>
           <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-            <img src="/hero-bradico.webp" alt="Bradico bedrijfshal staalconstructie Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
+            <img src="/camionet.webp" alt="Bradico bedrijfswagen — erkend aannemer Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
             {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-5">
               <span className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                Van ontwerp tot sleutelklare oplevering
+                Rechtstreeks met het Bradico-team
               </span>
             </div>
           </div>
