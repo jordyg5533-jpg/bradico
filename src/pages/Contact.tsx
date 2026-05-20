@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ChatBot } from "@/components/ChatBot";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
+import { OfferteModal } from "@/components/OfferteModal";
 import { QuoteForm } from "@/components/QuoteForm";
 import { fadeUp, viewport } from "@/lib/animations";
 
@@ -12,9 +13,24 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact — Bradico Bedrijfshallen & Staalconstructies Limburg</title>
+        <title>Contact - Bradico Bedrijfshallen & Staalconstructies Limburg</title>
         <meta name="description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Reactie binnen 48 uur." />
-        <link rel="canonical" href="https://www.bradico.be/contact" />
+        <link rel="canonical" href="https://www.bv-bradico.be/contact" />
+        <meta property="og:title" content="Contact - Bradico Bedrijfshallen & Staalconstructies Limburg" />
+        <meta property="og:description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Reactie binnen 48 uur." />
+        <meta property="og:url" content="https://www.bv-bradico.be/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:site_name" content="Bradico" />
+        <meta property="og:image" content="https://www.bv-bradico.be/projects/bedrijfshal-na.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Bradico - offerte industriebouw en staalconstructies Limburg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact - Bradico Bedrijfshallen & Staalconstructies Limburg" />
+        <meta name="twitter:description" content="Neem contact op voor een vrijblijvende offerte. Bedrijfshallen en staalconstructies in Limburg op vaste prijs." />
+        <meta name="twitter:image" content="https://www.bv-bradico.be/projects/bedrijfshal-na.jpg" />
+        <meta name="twitter:image:alt" content="Bradico - offerte industriebouw en staalconstructies Limburg" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -80,8 +96,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Bereikbaarheid</p>
-                      <p className="mt-1 text-sm font-semibold text-foreground">Ma–Vr: 07:00–18:00</p>
-                      <p className="text-sm text-muted-foreground">Za: 08:00–12:00 · Offerte altijd binnen 48u</p>
+                      <p className="mt-1 text-sm font-semibold text-foreground">Ma-Vr: 07:00-18:00</p>
+                      <p className="text-sm text-muted-foreground">Za: 08:00-12:00 - Offerte altijd binnen 48u</p>
                     </div>
                   </div>
                 </div>
@@ -93,6 +109,7 @@ export default function Contact() {
         <Footer />
         <ChatBot />
         <MobileBottomBar />
+        <OfferteModal />
       </div>
     </>
   );

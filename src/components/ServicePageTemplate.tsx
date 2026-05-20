@@ -5,6 +5,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { ChatBot } from "./ChatBot";
 import { MobileBottomBar } from "./MobileBottomBar";
+import { OfferteModal } from "./OfferteModal";
 import { QuoteForm } from "./QuoteForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { fadeUp, staggerContainer, staggerItem, viewport } from "@/lib/animations";
@@ -27,13 +28,25 @@ export interface ServiceData {
 }
 
 const cityLinks = [
+  { l: "Industriebouw Hasselt", h: "/industriebouw-hasselt" },
+  { l: "Industriebouw Genk", h: "/industriebouw-genk" },
+  { l: "Industriebouw Maasmechelen", h: "/industriebouw-maasmechelen" },
   { l: "Bedrijfshal Hasselt", h: "/bedrijfshal-hasselt" },
   { l: "Bedrijfshal Genk", h: "/bedrijfshal-genk" },
-  { l: "Bedrijfshal Antwerpen", h: "/bedrijfshal-antwerpen" },
   { l: "Bedrijfshal Sint-Truiden", h: "/bedrijfshal-sint-truiden" },
   { l: "Bedrijfshal Tongeren", h: "/bedrijfshal-tongeren" },
   { l: "Bedrijfshal Bilzen", h: "/bedrijfshal-bilzen" },
   { l: "Bedrijfshal Lommel", h: "/bedrijfshal-lommel" },
+  { l: "Bedrijfshal Antwerpen", h: "/bedrijfshal-antwerpen" },
+  { l: "Bedrijfshal Kinrooi", h: "/bedrijfshal-kinrooi" },
+  { l: "Bedrijfshal Maaseik", h: "/bedrijfshal-maaseik" },
+  { l: "Bedrijfshal Maasmechelen", h: "/bedrijfshal-maasmechelen" },
+  { l: "Bedrijfshal Bree", h: "/bedrijfshal-bree" },
+  { l: "Bedrijfshal Heusden-Zolder", h: "/bedrijfshal-heusden-zolder" },
+  { l: "Bedrijfshal Roermond (NL)", h: "/bedrijfshal-roermond" },
+  { l: "Bedrijfshal Venlo (NL)", h: "/bedrijfshal-venlo" },
+  { l: "Bedrijfshal Weert (NL)", h: "/bedrijfshal-weert" },
+  { l: "Bedrijfshal Sittard (NL)", h: "/bedrijfshal-sittard" },
 ];
 
 export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
@@ -46,7 +59,10 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
       "@type": "GeneralContractor",
       "name": "Bradico",
       "telephone": "+32472812952",
-      "url": "https://www.bradico.be",
+      "email": "info@bradico.be",
+      "url": "https://www.bv-bradico.be",
+      "image": "https://www.bv-bradico.be/projects/bedrijfshal-na.jpg",
+      "sameAs": ["https://www.google.com/maps?cid=6730394896287073580"],
       "address": { "@type": "PostalAddress", "addressLocality": "Kinrooi", "addressCountry": "BE" }
     },
     "areaServed": "Limburg, België",
@@ -63,14 +79,39 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
     })),
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bv-bradico.be/" },
+      { "@type": "ListItem", "position": 2, "name": service.h1, "item": service.canonical },
+    ],
+  };
+
   return (
     <>
       <Helmet>
         <title>{service.metaTitle}</title>
         <meta name="description" content={service.metaDesc} />
         <link rel="canonical" href={service.canonical} />
+        <meta property="og:title" content={service.metaTitle} />
+        <meta property="og:description" content={service.metaDesc} />
+        <meta property="og:url" content={service.canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:site_name" content="Bradico" />
+        <meta property="og:image" content={`https://www.bv-bradico.be${service.img}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={service.imgAlt} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={service.metaTitle} />
+        <meta name="twitter:description" content={service.metaDesc} />
+        <meta name="twitter:image" content={`https://www.bv-bradico.be${service.img}`} />
+        <meta name="twitter:image:alt" content={service.imgAlt} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -82,6 +123,13 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
           <div className="container-x relative">
             <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
               <motion.div className="text-white" variants={fadeUp} initial="hidden" animate="show">
+                <nav aria-label="Breadcrumb" className="mb-4">
+                  <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/50">
+                    <li><a href="/" className="hover:text-white/80 transition-colors">Home</a></li>
+                    <li><ChevronRight className="h-3 w-3" /></li>
+                    <li className="text-white/70">{service.h1}</li>
+                  </ol>
+                </nav>
                 <div className="mb-4 flex flex-wrap gap-2">
                   {service.badges.map((b) => (
                     <span key={b} className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/80">
@@ -117,7 +165,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
                 <img src={service.img} alt={service.imgAlt} className="rounded-2xl shadow-card w-full object-cover aspect-[4/3]" loading="lazy" />
               </motion.div>
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport} transition={{ delay: 0.1 }}>
-                <h2 className="text-2xl font-black text-foreground md:text-3xl">{service.h1}</h2>
+                <h2 className="text-2xl font-black text-foreground md:text-3xl">Wat u mag verwachten van Bradico</h2>
                 <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: service.intro }} />
               </motion.div>
             </div>
@@ -192,7 +240,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
         <section className="py-12">
           <div className="container-x">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
-              <h2 className="mb-6 text-lg font-bold text-foreground">Werkgebied — steden</h2>
+              <h2 className="mb-6 text-lg font-bold text-foreground">Werkgebied - steden</h2>
               <div className="flex flex-wrap gap-2">
                 {cityLinks.map((c) => (
                   <a key={c.h} href={c.h} className="inline-flex items-center gap-1 rounded-lg border bg-card px-3 py-1.5 text-sm font-medium text-foreground hover:border-accent hover:text-accent transition-colors">
@@ -209,7 +257,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
           <div className="container-x max-w-xl">
             <motion.div className="text-center mb-10" variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <h2 className="text-2xl font-black text-foreground">Offerte aanvragen</h2>
-              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur — geen verplichtingen.</p>
+              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur - geen verplichtingen.</p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <QuoteForm />
@@ -220,6 +268,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
         <Footer />
         <ChatBot />
         <MobileBottomBar />
+        <OfferteModal />
       </div>
     </>
   );

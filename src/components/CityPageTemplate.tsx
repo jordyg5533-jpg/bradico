@@ -5,6 +5,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { ChatBot } from "./ChatBot";
 import { MobileBottomBar } from "./MobileBottomBar";
+import { OfferteModal } from "./OfferteModal";
 import { QuoteForm } from "./QuoteForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { fadeUp, staggerContainer, staggerItem, viewport } from "@/lib/animations";
@@ -22,7 +23,7 @@ export interface CityData {
   faq: CityFaq[];
 }
 
-const diensten = [
+const dienstenDefault = [
   { t: "Staalconstructies", h: "/staalconstructies-limburg", img: "/projects/bhal.jpeg" },
   { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
   { t: "Loodsen", h: "/loodsen-magazijnen", img: "/projects/loods-na.jpg" },
@@ -30,15 +31,70 @@ const diensten = [
   { t: "Gevelrenovatie", h: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
 ];
 
+const dienstenPerStad: Record<string, { t: string; h: string; img: string }[]> = {
+  "Hasselt": [
+    { t: "Staalconstructies", h: "/staalconstructies-hasselt", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-hasselt", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen-hasselt", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-hasselt", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Genk": [
+    { t: "Staalconstructies", h: "/staalconstructies-genk", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-genk", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen-genk", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-genk", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Antwerpen": [
+    { t: "Staalconstructies", h: "/staalconstructies-antwerpen", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-antwerpen", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen-antwerpen", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-antwerpen", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Sint-Truiden": [
+    { t: "Staalconstructies", h: "/staalconstructies-sint-truiden", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-sint-truiden", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Tongeren": [
+    { t: "Staalconstructies", h: "/staalconstructies-tongeren", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-magazijnen", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Lommel": [
+    { t: "Staalconstructies", h: "/staalconstructies-lommel", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-lommel", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+  "Maasmechelen": [
+    { t: "Staalconstructies", h: "/staalconstructies-maasmechelen", img: "/projects/bhal.jpeg" },
+    { t: "Bedrijfshallen", h: "/bedrijfshallen-bouwen", img: "/projects/bedrijfshal-na.jpg" },
+    { t: "Loodsen", h: "/loodsen-magazijnen", img: "/projects/loods-na.jpg" },
+    { t: "Sandwichpanelen", h: "/sandwichpanelen", img: "/projects/gvl5.jpeg" },
+    { t: "Gevelrenovatie", h: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
+  ],
+};
+
 export const CityPageTemplate = ({ city }: { city: CityData }) => {
+  const diensten = dienstenPerStad[city.stad] ?? dienstenDefault;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "GeneralContractor"],
     "name": "Bradico",
     "description": city.metaDesc,
-    "url": "https://www.bradico.be",
+    "url": "https://www.bv-bradico.be",
     "telephone": "+32472812952",
     "email": "info@bradico.be",
+    "image": "https://www.bv-bradico.be/projects/bedrijfshal-na.jpg",
+    "sameAs": ["https://www.google.com/maps?cid=6730394896287073580"],
     "address": { "@type": "PostalAddress", "streetAddress": "Venlosesteenweg 418", "addressLocality": "Kinrooi", "postalCode": "3640", "addressCountry": "BE" },
     "areaServed": city.stad,
   };
@@ -52,14 +108,39 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
     })),
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bv-bradico.be/" },
+      { "@type": "ListItem", "position": 2, "name": `Bedrijfshal ${city.stad}`, "item": city.canonical },
+    ],
+  };
+
   return (
     <>
       <Helmet>
         <title>{city.metaTitle}</title>
         <meta name="description" content={city.metaDesc} />
         <link rel="canonical" href={city.canonical} />
+        <meta property="og:title" content={city.metaTitle} />
+        <meta property="og:description" content={city.metaDesc} />
+        <meta property="og:url" content={city.canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:site_name" content="Bradico" />
+        <meta property="og:image" content="https://www.bv-bradico.be/projects/bedrijfshal-na.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Bradico - industriebouw en staalconstructies Limburg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={city.metaTitle} />
+        <meta name="twitter:description" content={city.metaDesc} />
+        <meta name="twitter:image" content="https://www.bv-bradico.be/projects/bedrijfshal-na.jpg" />
+        <meta name="twitter:image:alt" content="Bradico - industriebouw en staalconstructies Limburg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -71,10 +152,13 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
           <div className="container-x relative">
             <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
               <motion.div className="text-white" variants={fadeUp} initial="hidden" animate="show">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold text-white/80">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  Bradico · {city.stad}
-                </div>
+                <nav aria-label="Breadcrumb" className="mb-4">
+                  <ol className="flex flex-wrap items-center gap-1.5 text-xs text-white/50">
+                    <li><a href="/" className="hover:text-white/80 transition-colors">Home</a></li>
+                    <li><ChevronRight className="h-3 w-3" /></li>
+                    <li className="text-white/70">Bedrijfshal {city.stad}</li>
+                  </ol>
+                </nav>
                 <h1 className="text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl">
                   Bedrijfshal of staalconstructie in {city.stad}?
                 </h1>
@@ -109,7 +193,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
         <section className="py-16 bg-soft">
           <div className="container-x max-w-4xl">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
-              <h2 className="text-2xl font-black text-foreground md:text-3xl">Bedrijfshallen in {city.stad} — wat Bradico voor u doet</h2>
+              <h2 className="text-2xl font-black text-foreground md:text-3xl">Bedrijfshallen in {city.stad} - wat Bradico voor u doet</h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: city.body }} />
             </motion.div>
           </div>
@@ -125,7 +209,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
               {diensten.map((d) => (
                 <motion.a key={d.h} href={d.h} variants={staggerItem} className="group rounded-2xl overflow-hidden border bg-card shadow-soft hover:-translate-y-1 hover:shadow-card transition-all duration-300">
                   <div className="aspect-video overflow-hidden">
-                    <img src={d.img} alt={`${d.t} in ${city.stad} — Bradico`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src={d.img} alt={`${d.t} in ${city.stad} - Bradico`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                   </div>
                   <div className="p-3 flex items-center justify-between">
                     <span className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">{d.t}</span>
@@ -177,7 +261,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
           <div className="container-x max-w-xl">
             <motion.div className="text-center mb-10" variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <h2 className="text-2xl font-black text-foreground">Offerte aanvragen in {city.stad}</h2>
-              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur — geen verplichtingen.</p>
+              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur - geen verplichtingen.</p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <QuoteForm />
@@ -188,6 +272,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
         <Footer />
         <ChatBot />
         <MobileBottomBar />
+        <OfferteModal />
       </div>
     </>
   );

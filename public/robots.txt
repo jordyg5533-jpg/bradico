@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bradico.be/sitemap.xml
+Sitemap: https://www.bv-bradico.be/sitemap.xml
+
+# LLM crawlers
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# LLM context file
+# https://www.bv-bradico.be/llms.txt
