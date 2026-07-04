@@ -3,7 +3,7 @@ import { Shield, Clock, User, MapPin } from "lucide-react";
 import { staggerContainer, staggerItem, viewport } from "@/lib/animations";
 
 const items = [
-  { icon: Shield, title: "Vaste prijs — altijd", desc: "Geen verrassingen achteraf. Wat wij offreren, betaalt u. Punt. Wij werken met gedetailleerde offertes zodat u exact weet waar u aan toe bent." },
+  { icon: Shield, title: "Vaste prijs  -  altijd", desc: "Geen verrassingen achteraf. Wat wij offreren, betaalt u. Punt. Wij werken met gedetailleerde offertes zodat u exact weet waar u aan toe bent." },
   { icon: Clock, title: "Offerte binnen 48 uur", desc: "Geen weken wachten. Na terreinbezoek ontvangt u binnen 48 uur een volledige vaste-prijs offerte. Snel en transparant." },
   { icon: User, title: "Één vast aanspreekpunt", desc: "Van eerste contact tot oplevering werkt u met dezelfde persoon. Geen doorverwijzingen, geen verwarring over wie wat doet." },
   { icon: MapPin, title: "BE + NL Limburg", desc: "Actief aan beide kanten van de grens. Zowel in Belgisch als Nederlands Limburg, Antwerpen en Vlaams-Brabant." },

@@ -74,6 +74,18 @@ export const ChatBot = () => {
     else if (step === "naam") { lead.current.naam = val; addUser(val); delay(() => { addBot(`Fijn, ${val}! Op welk nummer mogen we u terugbellen?`); setStep("telefoon"); }); }
     else if (step === "telefoon") {
       addUser(val);
+      fetch("https://formspree.io/f/xjgzkpno", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          _subject: "Nieuwe lead via chatbot - bv-bradico.be",
+          naam: lead.current.naam,
+          telefoon: val,
+          gemeente: lead.current.gemeente,
+          type: lead.current.dienst,
+          source: "chatbot",
+        }),
+      }).catch(() => {});
       delay(() => {
         addBot(`Bedankt, ${lead.current.naam}! We nemen zo snel mogelijk contact op voor uw ${lead.current.dienst.toLowerCase()} in ${lead.current.gemeente}. Tot snel! 🙏`);
         setStep("done");

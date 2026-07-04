@@ -2,13 +2,13 @@ import { CityPageTemplate, CityData } from "@/components/CityPageTemplate";
 
 const city: CityData = {
   stad: "Bilzen",
-  metaTitle: "Bedrijfshal Bouwen Bilzen — vaste prijs, sleutelklaar | Bradico",
+  metaTitle: "Bedrijfshal Bouwen Bilzen - vaste prijs, sleutelklaar | Bradico",
   metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Bilzen? Bradico levert sleutelklaar op vaste prijs in Bilzen en omgeving. Offerte binnen 48 uur.",
-  canonical: "https://www.bradico.be/bedrijfshal-bilzen",
-  intro: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Bilzen en de regio — sleutelklaar op vaste prijs. Van vergunning tot oplevering, zonder zorgen. Offerte binnen 48 uur na terreinbezoek.",
+  canonical: "https://www.bv-bradico.be/bedrijfshal-bilzen",
+  intro: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Bilzen en de regio - sleutelklaar op vaste prijs. Van vergunning tot oplevering, zonder zorgen. Offerte binnen 48 uur na terreinbezoek.",
   body: `<p>Bilzen is een centraal gelegen gemeente in Limburg met een gevarieerd economisch landschap. Nabij Hasselt, Tongeren en de Nederlandse grens biedt de regio uitstekende vestigingsmogelijkheden voor industrie, logistiek en ambacht.</p>
-<p>Bradico bouwt bedrijfshallen en staalconstructies in Bilzen en de omliggende gemeenten. We zijn goed geplaatst in de regio — ons kantoor en productiesite in Kinrooi ligt op korte afstand, wat snelle interventie en efficiënte logistiek mogelijk maakt.</p>
-<p>Of u nu een nieuwe loods, een productiehal of een uitbreiding van uw bestaande gebouw wilt — Bradico verzorgt het volledige traject op vaste prijs. Na terreinbezoek ontvangt u binnen 48 uur een transparante offerte, inclusief ontwerp, vergunningsbegeleiding en sleutelklare oplevering.</p>`,
+<p>Bradico bouwt bedrijfshallen en staalconstructies in Bilzen en de omliggende gemeenten. We zijn goed geplaatst in de regio - ons kantoor en productiesite in Kinrooi ligt op korte afstand, wat snelle interventie en efficiënte logistiek mogelijk maakt.</p>
+<p>Of u nu een nieuwe loods, een productiehal of een uitbreiding van uw bestaande gebouw wilt - Bradico verzorgt het volledige traject op vaste prijs. Na terreinbezoek ontvangt u binnen 48 uur een transparante offerte, inclusief ontwerp, vergunningsbegeleiding en sleutelklare oplevering.</p>`,
   deelgemeenten: ["Bilzen", "Kleine-Spouwen", "Grote-Spouwen", "Waltwilder", "Martenslinde", "Eigenbilzen", "Munsterbilzen"],
   buursteden: [
     { naam: "Hasselt", href: "/bedrijfshal-hasselt" },

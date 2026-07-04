@@ -6,7 +6,7 @@ import { staggerContainer, staggerItem } from "@/lib/animations";
 const badges = ["Vaste prijs", "Offerte binnen 48u", "Erkend aannemer", "BE + NL Limburg"];
 
 const stats = [
-  { n: "15+", label: "jaar ervaring" },
+  { n: "15+", label: "jaar vakervaring" },
   { n: "200+", label: "projecten" },
   { n: "48u", label: "offerte garantie" },
 ];
@@ -63,16 +63,16 @@ export const Hero = () => (
             Erkend aannemer · Limburg
           </div>
 
-          <h1 className="max-w-[22ch] text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-[3.2rem]">
-            Bedrijfshal of loods laten bouwen?{" "}
+          <h1 className="max-w-[28ch] text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-[3.2rem]">
+            Bedrijfshal of staalconstructie bouwen in Limburg, Antwerpen of NL Limburg?{" "}
             <span style={{ background: "linear-gradient(130deg, hsl(214 82% 72%) 0%, hsl(200 88% 65%) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
               Bradico regelt het.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-balance text-base text-white/70 md:text-lg">
-            Van staalconstructie en bedrijfshallen tot loodsen, sandwichpanelen en gevelrenovatie.
-            Vaste prijs, geen verrassingen — actief in heel <strong className="font-semibold text-white/90">Belgisch en Nederlands Limburg</strong> en Antwerpen.
+            Van industriebouw en staalconstructies tot loodsen, sandwichpanelen en gevelrenovatie.
+            Vaste prijs, geen verrassingen  -  actief in heel <strong className="font-semibold text-white/90">Limburg, Antwerpen en Vlaanderen</strong>.
           </p>
 
           <motion.div className="mt-6 flex flex-wrap gap-2" variants={staggerContainer} initial="hidden" animate="show" transition={{ delayChildren: 0.35 }}>
@@ -105,7 +105,7 @@ export const Hero = () => (
 
         <motion.div className="lg:pb-10" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.1 }}>
           <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-            <img src="/camionet.webp" alt="Bradico bedrijfswagen — erkend aannemer Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
+            <img src="/camionet.webp" alt="Bradico bedrijfswagen - erkend aannemer Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
             {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-5">

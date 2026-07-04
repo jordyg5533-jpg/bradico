@@ -3,13 +3,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { fadeUp, viewport } from "@/lib/animations";
 
 const faqs = [
-  { q: "Wat kost een bedrijfshal laten bouwen?", a: "De prijs van een bedrijfshal hangt af van de afmetingen, het type constructie en de afwerking. Bradico werkt altijd met een vaste prijs — na terreinbezoek ontvangt u binnen 48 uur een gedetailleerde offerte zonder verborgen kosten." },
+  { q: "Wat kost een bedrijfshal laten bouwen?", a: "De prijs van een bedrijfshal hangt af van de afmetingen, het type constructie en de afwerking. Bradico werkt altijd met een vaste prijs  -  na terreinbezoek ontvangt u binnen 48 uur een gedetailleerde offerte zonder verborgen kosten." },
   { q: "Hoe lang duurt het bouwen van een bedrijfshal?", a: "Een gemiddelde bedrijfshal wordt in 8 tot 16 weken opgeleverd, afhankelijk van de omvang en vergunningsprocedure. Wij bewaken de planning strikt zodat u op de afgesproken datum kan starten." },
-  { q: "Regelt Bradico ook de bouwvergunning?", a: "Ja. Wij begeleiden u door het volledige vergunningsproces. Van aanvraag tot goedkeuring — dat is deel van onze totaalformule." },
+  { q: "Regelt Bradico ook de bouwvergunning?", a: "Ja. Wij begeleiden u door het volledige vergunningsproces. Van aanvraag tot goedkeuring  -  dat is deel van onze totaalformule." },
   { q: "Wat zijn sandwichpanelen en waarvoor worden ze gebruikt?", a: "Sandwichpanelen zijn isolerende bouwelementen voor gevels en daken. Ze bieden uitstekende thermische isolatie, zijn snel te plaatsen en geschikt voor zowel nieuwbouw als renovatie van industriële gebouwen." },
-  { q: "Werkt Bradico ook in Nederlands Limburg?", a: "Absoluut. Bradico is actief aan beide kanten van de grens — zowel in Belgisch als Nederlands Limburg, inclusief de regio Maastricht, Venlo en Weert." },
+  { q: "Werkt Bradico ook in Nederlands Limburg?", a: "Absoluut. Bradico is actief aan beide kanten van de grens  -  zowel in Belgisch als Nederlands Limburg, inclusief de regio Maastricht, Venlo en Weert." },
   { q: "Wat is het verschil tussen een loods en een bedrijfshal?", a: "Een loods is doorgaans eenvoudiger van opbouw en primair bedoeld voor opslag. Een bedrijfshal kan ook productie-, kantoor- of showroomruimte combineren. Bradico bouwt beide, volledig op maat van uw activiteit." },
-  { q: "Kan Bradico ook een bestaande gevel renoveren?", a: "Ja. Gevelrenovatie is een van onze specialiteiten. We vervangen versleten panelen, vernieuwen de isolatie en zorgen voor een frisse, energiezuinige gevel — met minimale hinder voor uw bedrijfsactiviteit." },
+  { q: "Kan Bradico ook een bestaande gevel renoveren?", a: "Ja. Gevelrenovatie is een van onze specialiteiten. We vervangen versleten panelen, vernieuwen de isolatie en zorgen voor een frisse, energiezuinige gevel  -  met minimale hinder voor uw bedrijfsactiviteit." },
   { q: "Geeft Bradico garantie op de uitvoering?", a: "Ja. Wij leveren sleutelklaar op en geven garantie op zowel materialen als uitvoering. Na oplevering bent u voor vragen en nazorg bij dezelfde contactpersoon terecht." },
 ];
 

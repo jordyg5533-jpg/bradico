@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <Helmet>
-        <title>Pagina niet gevonden — Bradico</title>
+        <title>Pagina niet gevonden  -  Bradico</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div className="min-h-screen bg-background flex flex-col">

@@ -1,14 +1,45 @@
 import { useState } from "react";
-import { ArrowRight, Lock, Check } from "lucide-react";
+import { ArrowRight, Lock, Check, Loader2 } from "lucide-react";
 
 const TRUST = ["Geen verplichtingen", "Reactie binnen 24u", "Vaste prijs garantie"];
 
 export const QuoteForm = () => {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError("");
+    const form = e.currentTarget;
+    const honeypot = (form.elements.namedItem("_gotcha") as HTMLInputElement).value;
+    if (honeypot) return;
+    const data = {
+      _subject: "Nieuwe offerte-aanvraag via bv-bradico.be",
+      naam: (form.elements.namedItem("naam") as HTMLInputElement).value,
+      telefoon: (form.elements.namedItem("telefoon") as HTMLInputElement).value,
+      gemeente: (form.elements.namedItem("gemeente") as HTMLInputElement).value,
+      type: (form.elements.namedItem("type") as HTMLSelectElement).value,
+      bericht: (form.elements.namedItem("bericht") as HTMLTextAreaElement).value,
+      source: "form",
+    };
+    try {
+      const res = await fetch("https://formspree.io/f/xjgzkpno", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError("Er is iets misgegaan. Bel ons op +32 472 81 29 52.");
+      }
+    } catch {
+      setError("Er is iets misgegaan. Bel ons op +32 472 81 29 52.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (sent) {
@@ -28,7 +59,7 @@ export const QuoteForm = () => {
       {/* header */}
       <div className="px-6 pt-6 pb-5 border-b border-border">
         <h3 className="text-lg font-black text-foreground">Gratis offerte aanvragen</h3>
-        <p className="mt-1 text-xs text-muted-foreground">Reactie binnen 48 uur — volledig vrijblijvend.</p>
+        <p className="mt-1 text-xs text-muted-foreground">Reactie binnen 48 uur  -  volledig vrijblijvend.</p>
       </div>
 
       <div className="p-6 space-y-4">
@@ -92,13 +123,18 @@ export const QuoteForm = () => {
           />
         </div>
 
+        {/* honeypot — verborgen voor mensen, gevuld door bots */}
+        <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+
+        {error && <p className="text-sm text-red-600 text-center">{error}</p>}
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white transition-all hover:brightness-110 hover:scale-[1.01] active:scale-95"
+          disabled={loading}
+          className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white transition-all hover:brightness-110 hover:scale-[1.01] active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
           style={{ background: "linear-gradient(135deg, hsl(214 82% 54%) 0%, hsl(220 85% 46%) 100%)", boxShadow: "0 4px 20px -4px hsl(214 82% 56% / 0.45)" }}
         >
-          Offerte aanvragen
-          <ArrowRight className="h-4 w-4" />
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
+          {loading ? "Versturen..." : "Offerte aanvragen"}
         </button>
 
         {/* micro trust */}

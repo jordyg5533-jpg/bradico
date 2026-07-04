@@ -12,7 +12,7 @@ const signals = [
 
 export const TrustBar = () => (
   <section className="border-y border-border bg-card" aria-label="Vertrouwenssignalen">
-    {/* scroll wrapper — hides scrollbar via CSS utility */}
+    {/* scroll wrapper  -  hides scrollbar via CSS utility */}
     <div className="scrollbar-hide overflow-x-auto">
       <motion.div
         className="flex min-w-max items-center gap-6 px-5 py-4 sm:px-8 lg:min-w-0 lg:mx-auto lg:max-w-7xl lg:flex-wrap lg:justify-between lg:gap-x-8 lg:gap-y-3 lg:px-12 lg:py-5"

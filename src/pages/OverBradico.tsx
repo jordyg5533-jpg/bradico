@@ -70,10 +70,10 @@ const OverBradico = () => (
   <>
     <Helmet>
       <title>Over Bradico | Specialist in Industriebouw & Staalconstructies Limburg</title>
-      <meta name="description" content="Bradico is uw erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Gevestigd in Kinrooi - 15+ jaar ervaring, vaste prijs, sleutelklaar." />
+      <meta name="description" content="Bradico is uw erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Gevestigd in Kinrooi - team met 15+ jaar ervaring, vaste prijs, sleutelklaar." />
       <link rel="canonical" href="https://www.bv-bradico.be/over-bradico" />
       <meta property="og:title" content="Over Bradico | Specialist in Industriebouw & Staalconstructies Limburg" />
-      <meta property="og:description" content="Bradico is uw erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Gevestigd in Kinrooi - 15+ jaar ervaring, vaste prijs, sleutelklaar." />
+      <meta property="og:description" content="Bradico is uw erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Gevestigd in Kinrooi - team met 15+ jaar ervaring, vaste prijs, sleutelklaar." />
       <meta property="og:url" content="https://www.bv-bradico.be/over-bradico" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="nl_BE" />
@@ -84,7 +84,7 @@ const OverBradico = () => (
       <meta property="og:image:alt" content="Bradico - erkend aannemer industriebouw Limburg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Over Bradico | Industriebouw & Staalconstructies Limburg" />
-      <meta name="twitter:description" content="Bradico is uw erkend aannemer voor industriebouw en staalconstructies in Limburg. 15+ jaar ervaring, vaste prijs." />
+      <meta name="twitter:description" content="Bradico is uw erkend aannemer voor industriebouw en staalconstructies in Limburg. Team met 15+ jaar ervaring, vaste prijs." />
       <meta name="twitter:image" content="https://www.bv-bradico.be/projects/bedrijfshal-na.jpg" />
       <meta name="twitter:image:alt" content="Bradico - erkend aannemer industriebouw Limburg" />
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
@@ -111,7 +111,7 @@ const OverBradico = () => (
                 Bradico bouwt bedrijfshallen, staalconstructies, loodsen en industriële gebouwen in Limburg en omstreken. Gevestigd in Kinrooi, actief in heel België en Nederlands Limburg.
               </p>
               <div className="mt-6 flex flex-col gap-2 text-sm text-white/70">
-                <span className="flex items-center gap-2"><Check className="h-4 w-4 text-accent" />15+ jaar ervaring in industriebouw</span>
+                <span className="flex items-center gap-2"><Check className="h-4 w-4 text-accent" />15+ jaar vakervaring in industriebouw</span>
                 <span className="flex items-center gap-2"><Check className="h-4 w-4 text-accent" />200+ gerealiseerde projecten</span>
                 <span className="flex items-center gap-2"><Check className="h-4 w-4 text-accent" />Erkend aannemer, geregistreerd in België</span>
                 <span className="flex items-center gap-2"><Check className="h-4 w-4 text-accent" />Vaste prijs na terreinbezoek - nooit meerwerken</span>
@@ -140,7 +140,7 @@ const OverBradico = () => (
             <h2 className="text-2xl font-black text-foreground md:text-3xl">Wie is Bradico?</h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>Bradico is een erkend aannemer gespecialiseerd in industriebouw, staalconstructies en bedrijfshallen. We zijn gevestigd in Kinrooi (Oost-Limburg) en actief in heel Belgisch en Nederlands Limburg, Antwerpen en Vlaams-Brabant.</p>
-              <p>Met meer dan 15 jaar ervaring en meer dan 200 gerealiseerde projecten zijn we een vaste waarde in de Limburgse industriebouwmarkt. Onze klanten zijn kmo's, landbouwbedrijven, logistieke spelers en industriële ondernemers die nood hebben aan kwalitatieve, snel gebouwde en degelijk afgewerkte bedrijfsruimte.</p>
+              <p>Ons team combineert meer dan 15 jaar vakervaring met meer dan 200 gerealiseerde projecten en is zo een vaste waarde in de Limburgse industriebouwmarkt. Onze klanten zijn kmo's, landbouwbedrijven, logistieke spelers en industriële ondernemers die nood hebben aan kwalitatieve, snel gebouwde en degelijk afgewerkte bedrijfsruimte.</p>
               <p>Wat Bradico onderscheidt: wij werken altijd met één vaste contactpersoon per project, altijd op vaste prijs na terreinbezoek, en altijd met eigen materieel en vaste ploegen. Dat maakt ons snel, betrouwbaar en transparant - van de eerste schets tot de sleutelklare oplevering.</p>
             </div>
           </motion.div>

@@ -24,7 +24,7 @@ export const BeforeAfterCard = ({ voor, na, title, desc, type }: BeforeAfterCard
         {/* VOOR */}
         <img
           src={voor}
-          alt={`${title} — voor`}
+          alt={`${title}  -  voor`}
           className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500"
           style={{ opacity: showNa ? 0 : 1 }}
           loading="lazy"
@@ -32,7 +32,7 @@ export const BeforeAfterCard = ({ voor, na, title, desc, type }: BeforeAfterCard
         {/* NA */}
         <img
           src={na}
-          alt={`${title} — na`}
+          alt={`${title}  -  na`}
           className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500"
           style={{ opacity: showNa ? 1 : 0 }}
           loading="lazy"
@@ -89,7 +89,7 @@ export const SinglePhotoCard = ({ img, title, desc, type }: SinglePhotoCardProps
     <div className="relative aspect-[4/3] overflow-hidden">
       <img
         src={img}
-        alt={`${title} — Bradico`}
+        alt={`${title}  -  Bradico`}
         className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
         loading="lazy"
       />

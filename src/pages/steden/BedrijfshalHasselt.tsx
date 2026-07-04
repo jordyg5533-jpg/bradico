@@ -2,13 +2,13 @@ import { CityPageTemplate, CityData } from "@/components/CityPageTemplate";
 
 const city: CityData = {
   stad: "Hasselt",
-  metaTitle: "Bedrijfshal Bouwen Hasselt — vaste prijs, sleutelklaar | Bradico",
+  metaTitle: "Bedrijfshal Bouwen Hasselt - vaste prijs, sleutelklaar | Bradico",
   metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Hasselt? Bradico levert sleutelklaar op vaste prijs. Offerte binnen 48 uur. Actief in heel Limburg.",
-  canonical: "https://www.bradico.be/bedrijfshal-hasselt",
-  intro: "Bradico is uw aannemer voor bedrijfshallen, loodsen en staalconstructies in Hasselt en omgeving. We leveren volledig sleutelklaar op vaste prijs — van vergunning tot oplevering. Offerte binnen 48 uur na terreinbezoek.",
-  body: `<p>Hasselt is de economische hoofdstad van Limburg en een dynamische regio voor industrie, logistiek en handel. De vraag naar kwalitatieve bedrijfshuisvesting groeit gestaag — of het nu gaat om nieuwe productie-infrastructuur, uitbreiding van opslagcapaciteit of een volledig nieuw bedrijfscomplex.</p>
-<p>Bradico bouwt bedrijfshallen en staalconstructies in Hasselt en de wijde omgeving. Wij kennen de lokale vergunningsprocedures, de terreinomstandigheden en de noden van Hasseltse ondernemers. Van het eerste gesprek tot de sleutelklare oplevering is er één aanspreekpunt — dat maakt het verschil.</p>
-<p>Of u nu een opslagloods van 500m² of een productiehal van 3.000m² wilt bouwen: Bradico werkt altijd op vaste prijs na terreinbezoek. Geen meerwerken, geen verrassingen — wel een degelijk en snel gebouwd pand dat decennia meegaat.</p>`,
+  canonical: "https://www.bv-bradico.be/bedrijfshal-hasselt",
+  intro: "Bradico is uw aannemer voor bedrijfshallen, loodsen en staalconstructies in Hasselt en omgeving. We leveren volledig sleutelklaar op vaste prijs - van vergunning tot oplevering. Offerte binnen 48 uur na terreinbezoek.",
+  body: `<p>Hasselt is de economische hoofdstad van Limburg en een dynamische regio voor industrie, logistiek en handel. De vraag naar kwalitatieve bedrijfshuisvesting groeit gestaag - of het nu gaat om nieuwe productie-infrastructuur, uitbreiding van opslagcapaciteit of een volledig nieuw bedrijfscomplex.</p>
+<p>Bradico bouwt bedrijfshallen en staalconstructies in Hasselt en de wijde omgeving. Wij kennen de lokale vergunningsprocedures, de terreinomstandigheden en de noden van Hasseltse ondernemers. Van het eerste gesprek tot de sleutelklare oplevering is er één aanspreekpunt - dat maakt het verschil.</p>
+<p>Of u nu een opslagloods van 500m² of een productiehal van 3.000m² wilt bouwen: Bradico werkt altijd op vaste prijs na terreinbezoek. Geen meerwerken, geen verrassingen - wel een degelijk en snel gebouwd pand dat decennia meegaat.</p>`,
   deelgemeenten: ["Hasselt", "Kermt", "Kuringen", "Wimmertingen", "Spalbeek", "Stokrooie", "Rapertingen"],
   buursteden: [
     { naam: "Genk", href: "/bedrijfshal-genk" },

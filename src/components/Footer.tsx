@@ -40,14 +40,43 @@ export const Footer = () => (
             <li><a href="/bedrijfshal-tongeren" className="hover:text-accent transition-smooth">Bedrijfshal Tongeren</a></li>
             <li><a href="/bedrijfshal-bilzen" className="hover:text-accent transition-smooth">Bedrijfshal Bilzen</a></li>
             <li><a href="/bedrijfshal-lommel" className="hover:text-accent transition-smooth">Bedrijfshal Lommel</a></li>
+            <li><a href="/bedrijfshal-kinrooi" className="hover:text-accent transition-smooth">Bedrijfshal Kinrooi</a></li>
+            <li><a href="/bedrijfshal-maaseik" className="hover:text-accent transition-smooth">Bedrijfshal Maaseik</a></li>
+            <li><a href="/bedrijfshal-maasmechelen" className="hover:text-accent transition-smooth">Bedrijfshal Maasmechelen</a></li>
+            <li><a href="/bedrijfshal-bree" className="hover:text-accent transition-smooth">Bedrijfshal Bree</a></li>
+            <li><a href="/bedrijfshal-heusden-zolder" className="hover:text-accent transition-smooth">Bedrijfshal Heusden-Zolder</a></li>
+          </ul>
+          <h4 className="mt-6 mb-4 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Nederland</h4>
+          <ul className="space-y-2.5 text-sm text-white/80">
+            <li><a href="/bedrijfshal-roermond" className="hover:text-accent transition-smooth">Bedrijfshal Roermond</a></li>
+            <li><a href="/bedrijfshal-venlo" className="hover:text-accent transition-smooth">Bedrijfshal Venlo</a></li>
+            <li><a href="/bedrijfshal-weert" className="hover:text-accent transition-smooth">Bedrijfshal Weert</a></li>
+            <li><a href="/bedrijfshal-sittard" className="hover:text-accent transition-smooth">Bedrijfshal Sittard</a></li>
+          </ul>
+          <h4 className="mt-6 mb-4 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Werkgebied</h4>
+          <ul className="space-y-2.5 text-sm text-white/80">
+            <li><a href="/industriebouw-tongeren" className="hover:text-accent transition-smooth">Industriebouw Tongeren</a></li>
+            <li><a href="/industriebouw-bilzen" className="hover:text-accent transition-smooth">Industriebouw Bilzen</a></li>
+            <li><a href="/industriebouw-sint-truiden" className="hover:text-accent transition-smooth">Industriebouw Sint-Truiden</a></li>
+            <li><a href="/industriebouw-lommel" className="hover:text-accent transition-smooth">Industriebouw Lommel</a></li>
+            <li><a href="/industriebouw-beringen" className="hover:text-accent transition-smooth">Industriebouw Beringen</a></li>
+            <li><a href="/industriebouw-maaseik" className="hover:text-accent transition-smooth">Industriebouw Maaseik</a></li>
           </ul>
         </div>
 
         <div>
+          <h4 className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Kennisbank</h4>
+          <ul className="space-y-2.5 text-sm text-white/80 mb-6">
+            <li><a href="/kennis" className="hover:text-accent transition-smooth">Alle kennisartikelen</a></li>
+            <li><a href="/industriebouw-limburg" className="hover:text-accent transition-smooth">Industriebouw Limburg</a></li>
+            <li><a href="/kennis/wat-kost-een-bedrijfshal-bouwen" className="hover:text-accent transition-smooth">Wat kost een bedrijfshal?</a></li>
+            <li><a href="/kennis/staalbouw-vs-betonbouw" className="hover:text-accent transition-smooth">Staalbouw vs. betonbouw</a></li>
+            <li><a href="/kennis/industriele-loods-bouwen" className="hover:text-accent transition-smooth">Loods bouwen - gids</a></li>
+          </ul>
           <h4 className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-white/50">Bereikbaar</h4>
           <ul className="space-y-2 text-sm text-white/80">
-            <li className="font-semibold text-white/90">Ma–vr: 7u – 17u</li>
-            <li className="text-white/50 text-xs">Zaterdag op afspraak</li>
+            <li className="font-semibold text-white/90">Ma - vr: 7u  -  18u</li>
+            <li className="text-white/50 text-xs">Za: 8u  -  12u</li>
           </ul>
           <a href="/#contact" className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-bold text-white shadow-lg transition-all hover:brightness-110" style={{ background: "hsl(214 82% 56%)" }}>
             Gratis offerte aanvragen
@@ -64,12 +93,13 @@ export const Footer = () => (
           <span>© {new Date().getFullYear()} Bradico. Alle rechten voorbehouden.</span>
           <span className="text-white/30">BTW: BE1005.526.348</span>
         </div>
-        <div className="flex gap-5">
-          <a href="#" className="hover:text-accent transition-smooth">Privacy</a>
-          <a href="#" className="hover:text-accent transition-smooth">Cookies</a>
+        <div className="flex flex-wrap gap-5">
+          <a href="/over-bradico" className="hover:text-accent transition-smooth">Over Bradico</a>
+          <a href="/privacy" className="hover:text-accent transition-smooth">Privacy & Cookies</a>
+          <a href="https://www.jgscale.be" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-smooth">Website door JG Scale</a>
         </div>
       </div>
     </div>
-    <div className="h-[72px] lg:hidden" aria-hidden />
+    <div className="h-[72px]" aria-hidden />
   </footer>
 );

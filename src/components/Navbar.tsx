@@ -17,6 +17,15 @@ const steden = [
   { label: "Tongeren", href: "/bedrijfshal-tongeren" },
   { label: "Bilzen", href: "/bedrijfshal-bilzen" },
   { label: "Lommel", href: "/bedrijfshal-lommel" },
+  { label: "Kinrooi", href: "/bedrijfshal-kinrooi" },
+  { label: "Maaseik", href: "/bedrijfshal-maaseik" },
+  { label: "Maasmechelen", href: "/bedrijfshal-maasmechelen" },
+  { label: "Bree", href: "/bedrijfshal-bree" },
+  { label: "Heusden-Zolder", href: "/bedrijfshal-heusden-zolder" },
+  { label: "Roermond (NL)", href: "/bedrijfshal-roermond" },
+  { label: "Venlo (NL)", href: "/bedrijfshal-venlo" },
+  { label: "Weert (NL)", href: "/bedrijfshal-weert" },
+  { label: "Sittard (NL)", href: "/bedrijfshal-sittard" },
 ];
 
 interface DropdownProps {
@@ -115,30 +124,30 @@ export const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div className="border-t bg-background/97 backdrop-blur-xl lg:hidden">
+        <div className="border-t bg-white lg:hidden" style={{ boxShadow: "0 8px 32px -4px rgba(0,0,0,0.18)" }}>
           <div className="container-x flex flex-col gap-0.5 py-4">
-            <button onClick={() => setMobileSection(mobileSection === "diensten" ? null : "diensten")} className="flex items-center justify-between rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-secondary">
+            <button onClick={() => setMobileSection(mobileSection === "diensten" ? null : "diensten")} className={`flex items-center justify-between rounded-lg px-3 py-3 text-base font-medium transition-colors ${mobileSection === "diensten" ? "bg-accent/10 text-accent" : "text-gray-800 hover:bg-accent/10 hover:text-accent"}`}>
               Diensten <ChevronDown className={`h-4 w-4 transition-transform ${mobileSection === "diensten" ? "rotate-180" : ""}`} />
             </button>
             {mobileSection === "diensten" && (
               <div className="mb-1 ml-3 flex flex-col gap-0.5 border-l-2 border-accent/30 pl-3">
                 {diensten.map((item) => (
-                  <a key={item.href} href={item.href} onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-accent">{item.label}</a>
+                  <a key={item.href} href={item.href} onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">{item.label}</a>
                 ))}
               </div>
             )}
-            <button onClick={() => setMobileSection(mobileSection === "steden" ? null : "steden")} className="flex items-center justify-between rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-secondary">
+            <button onClick={() => setMobileSection(mobileSection === "steden" ? null : "steden")} className={`flex items-center justify-between rounded-lg px-3 py-3 text-base font-medium transition-colors ${mobileSection === "steden" ? "bg-accent/10 text-accent" : "text-gray-800 hover:bg-accent/10 hover:text-accent"}`}>
               Steden <ChevronDown className={`h-4 w-4 transition-transform ${mobileSection === "steden" ? "rotate-180" : ""}`} />
             </button>
             {mobileSection === "steden" && (
               <div className="mb-1 ml-3 grid grid-cols-2 gap-0.5 border-l-2 border-accent/30 pl-3">
                 {steden.map((item) => (
-                  <a key={item.href} href={item.href} onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground/80 hover:bg-secondary hover:text-accent">{item.label}</a>
+                  <a key={item.href} href={item.href} onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors">{item.label}</a>
                 ))}
               </div>
             )}
-            <a href="/realisaties" onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-secondary">Realisaties</a>
-            <a href="/#contact" onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-secondary">Contact</a>
+            <a href="/realisaties" onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-accent/10 hover:text-accent transition-colors">Realisaties</a>
+            <a href="/#contact" onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-accent/10 hover:text-accent transition-colors">Contact</a>
             <a href="/#contact" onClick={() => setMobileOpen(false)} className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-accent px-4 py-3 text-sm font-bold text-white">
               Gratis offerte aanvragen
             </a>

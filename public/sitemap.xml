@@ -1,18 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bradico.be/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.bradico.be/staalconstructies-limburg</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshallen-bouwen</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bradico.be/loodsen-magazijnen</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bradico.be/sandwichpanelen</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bradico.be/gevelrenovatie-industrieel</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-hasselt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-genk</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-antwerpen</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-sint-truiden</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-tongeren</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-bilzen</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/bedrijfshal-lommel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bradico.be/realisaties</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bradico.be/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Hoofdpagina's -->
+  <url>
+    <loc>https://www.bv-bradico.be/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/hero-bradico.webp</image:loc><image:title>Bradico - Staalconstructies en bedrijfshallen Limburg</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bedrijfshal-na.jpg</image:loc><image:title>Bedrijfshal gebouwd door Bradico - na</image:title></image:image>
+  </url>
+  <url><loc>https://www.bv-bradico.be/over-bradico</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bv-bradico.be/realisaties</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bedrijfshal-na.jpg</image:loc><image:title>Realisatie bedrijfshal Bradico</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/gevelrenovatie-na.jpg</image:loc><image:title>Realisatie gevelrenovatie Bradico</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/loods-na.jpg</image:loc><image:title>Realisatie loods Bradico</image:title></image:image>
+  </url>
+  <url><loc>https://www.bv-bradico.be/contact</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Hoofddiensten -->
+  <url>
+    <loc>https://www.bv-bradico.be/staalconstructies-limburg</loc>
+    <lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bhal.jpeg</image:loc><image:title>Staalconstructie Limburg - Bradico</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bhal3.jpeg</image:loc><image:title>Industriele staalconstructie op maat Limburg</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.bv-bradico.be/bedrijfshallen-bouwen</loc>
+    <lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bedrijfshal-na.jpg</image:loc><image:title>Bedrijfshal bouwen - Bradico Limburg</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/bedrijfshal-voor.jpg</image:loc><image:title>Bedrijfshal voor renovatie - Bradico</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.bv-bradico.be/loodsen-magazijnen</loc>
+    <lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/loods-na.jpg</image:loc><image:title>Loods bouwen Limburg - Bradico</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.bv-bradico.be/sandwichpanelen</loc>
+    <lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/gvl5.jpeg</image:loc><image:title>Sandwichpanelen plaatsing - Bradico</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.bv-bradico.be/gevelrenovatie-industrieel</loc>
+    <lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/gevelrenovatie-na.jpg</image:loc><image:title>Industriele gevelrenovatie - Bradico</image:title></image:image>
+    <image:image><image:loc>https://www.bv-bradico.be/projects/gevel-project-na-1.jpeg</image:loc><image:title>Gevelrenovatie na renovatie - Bradico Limburg</image:title></image:image>
+  </url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-limburg</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalbouw-limburg</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructie-op-maat</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/offerte-industriebouw</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- Staalconstructies per stad -->
+  <url><loc>https://www.bv-bradico.be/staalconstructies-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-antwerpen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-sint-truiden</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-tongeren</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-lommel</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/staalconstructies-maasmechelen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Loodsen per stad -->
+  <url><loc>https://www.bv-bradico.be/loodsen-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/loodsen-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/loodsen-antwerpen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/loodsen-sint-truiden</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/loodsen-lommel</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Sandwichpanelen per stad -->
+  <url><loc>https://www.bv-bradico.be/sandwichpanelen-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/sandwichpanelen-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/sandwichpanelen-antwerpen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Gevelrenovatie per stad -->
+  <url><loc>https://www.bv-bradico.be/gevelrenovatie-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/gevelrenovatie-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/gevelrenovatie-antwerpen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Industriebouw per stad -->
+  <url><loc>https://www.bv-bradico.be/industriebouw-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-maasmechelen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-tongeren</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-bilzen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-sint-truiden</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-lommel</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-beringen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/industriebouw-maaseik</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Bedrijfshal per stad (Belgie) -->
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-hasselt</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-genk</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-antwerpen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-sint-truiden</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-tongeren</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-bilzen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-lommel</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-kinrooi</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-maaseik</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-maasmechelen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-bree</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-heusden-zolder</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Bedrijfshal per stad (Nederland) -->
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-roermond</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-venlo</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-weert</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/bedrijfshal-sittard</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Kennisbank -->
+  <url><loc>https://www.bv-bradico.be/kennis</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/wat-kost-een-bedrijfshal-bouwen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/industriele-loods-bouwen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/staalbouw-vs-betonbouw</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/prijs-industriebouw</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/stalen-gevelbeplating</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/staal-skeletbouw</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/omgevingsvergunning-bedrijfshal</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/loods-bouwen-of-huren</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/kosten-sandwichpanelen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/energie-efficiente-bedrijfshal</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/staalconstructie-onderhoud</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/industriebouw-nederland</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/bedrijfshal-afmetingen</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bv-bradico.be/kennis/gevelrenovatie-industrieel-gids</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
