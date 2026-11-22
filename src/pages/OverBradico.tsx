@@ -3,7 +3,6 @@ import { Check, Phone, MapPin, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ChatBot } from "@/components/ChatBot";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { OfferteModal } from "@/components/OfferteModal";
 import { QuoteForm } from "@/components/QuoteForm";
@@ -231,7 +230,6 @@ const OverBradico = () => (
       </section>
 
       <Footer />
-      <ChatBot />
       <MobileBottomBar />
       <OfferteModal />
     </div>

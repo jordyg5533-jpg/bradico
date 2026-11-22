@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ChatBot } from "@/components/ChatBot";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { OfferteModal } from "@/components/OfferteModal";
 import { ContactCTA } from "@/components/ContactCTA";
@@ -244,7 +243,6 @@ export default function Realisaties() {
 
         <ContactCTA />
         <Footer />
-        <ChatBot />
         <MobileBottomBar />
         <OfferteModal />
       </div>

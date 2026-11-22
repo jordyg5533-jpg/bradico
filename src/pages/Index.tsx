@@ -11,7 +11,6 @@ import { ContactCTA } from "@/components/ContactCTA";
 import { GoogleReviews } from "@/components/GoogleReviews";
 import { SEOContent } from "@/components/SEOContent";
 import { Footer } from "@/components/Footer";
-import { ChatBot } from "@/components/ChatBot";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { OfferteModal } from "@/components/OfferteModal";
 
@@ -64,7 +63,6 @@ const Index = () => (
         <ContactCTA />
       </main>
       <Footer />
-      <ChatBot />
       <MobileBottomBar />
       <OfferteModal />
     </div>

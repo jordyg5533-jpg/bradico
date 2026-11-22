@@ -3,7 +3,6 @@ import { Check, Phone, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { ChatBot } from "./ChatBot";
 import { MobileBottomBar } from "./MobileBottomBar";
 import { OfferteModal } from "./OfferteModal";
 import { QuoteForm } from "./QuoteForm";
@@ -295,7 +294,6 @@ export const ServiceCityPageTemplate = ({ data }: { data: ServiceCityData }) => 
         </section>
 
         <Footer />
-        <ChatBot />
         <MobileBottomBar />
         <OfferteModal />
       </div>

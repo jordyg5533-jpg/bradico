@@ -1,4 +1,4 @@
-// Validatie van contactgegevens, gedeeld door QuoteForm, OfferteModal en ChatBot.
+// Validatie van contactgegevens, gedeeld door QuoteForm, OfferteModal en de vaste balk onderaan.
 // Doel: geen enkele aanvraag meer zonder bruikbaar telefoonnummer en e-mailadres.
 
 /** Enkel de cijfers uit een ingevoerd nummer. */

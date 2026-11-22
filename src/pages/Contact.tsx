@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ChatBot } from "@/components/ChatBot";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { OfferteModal } from "@/components/OfferteModal";
 import { QuoteForm } from "@/components/QuoteForm";
@@ -107,7 +106,6 @@ export default function Contact() {
         </section>
 
         <Footer />
-        <ChatBot />
         <MobileBottomBar />
         <OfferteModal />
       </div>
