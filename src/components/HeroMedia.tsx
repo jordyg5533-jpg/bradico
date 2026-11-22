@@ -50,7 +50,7 @@ export const HeroMedia = ({ variant = "frame" }: { variant?: "frame" | "backgrou
   return (
     <div className={variant === "background" ? "absolute inset-0" : "relative aspect-[4/5] w-full sm:aspect-[16/10]"}>
       <picture>
-        <source media={MOBILE_QUERY} srcSet="/video/hero-loop-mobiel-poster.webp" width={1080} height={1920} />
+        <source media={MOBILE_QUERY} srcSet="/video/hero-loop-mobiel-poster.webp" width={1080} height={1350} />
         <img
           src="/video/hero-loop-desktop-poster.webp"
           alt={ALT}
