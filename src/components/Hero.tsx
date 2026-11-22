@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Phone, Check, ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
+import { HeroMedia } from "@/components/HeroMedia";
 
 const badges = ["Vaste prijs", "Vrijblijvende offerte", "Erkend aannemer", "BE + NL Limburg"];
 
@@ -105,7 +106,7 @@ export const Hero = () => (
 
         <motion.div className="lg:pb-10" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.1 }}>
           <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-            <img src="/camionet.webp" alt="Bradico bedrijfswagen - erkend aannemer Limburg" width={960} height={640} className="aspect-[4/3] w-full object-cover" fetchPriority="high" />
+            <HeroMedia />
             {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-5">
