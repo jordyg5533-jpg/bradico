@@ -9,7 +9,7 @@ const ALT = "Bradico plaatst een wandpaneel met de kraan in een staalconstructie
  * - De video wordt pas na het laden van de pagina toegevoegd, zodat hij de laadtijd niet raakt.
  * - Geen video bij "minder beweging" of databesparing: dan blijft het startbeeld staan.
  */
-export const HeroMedia = () => {
+export const HeroMedia = ({ variant = "frame" }: { variant?: "frame" | "background" }) => {
   const [src, setSrc] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -48,7 +48,7 @@ export const HeroMedia = () => {
   }, [src]);
 
   return (
-    <div className="relative aspect-[4/5] w-full sm:aspect-[16/10]">
+    <div className={variant === "background" ? "absolute inset-0" : "relative aspect-[4/5] w-full sm:aspect-[16/10]"}>
       <picture>
         <source media={MOBILE_QUERY} srcSet="/video/hero-loop-mobiel-poster.webp" width={720} height={1280} />
         <img

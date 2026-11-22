@@ -45,16 +45,18 @@ function AnimatedStat({ n, label }: { n: string; label: string }) {
 export const Hero = () => (
   <section id="top" className="relative overflow-hidden pb-0 pt-20 md:pt-24" aria-label="Hero sectie">
     <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #050c1a 0%, #0c1e38 50%, #122444 100%)" }} aria-hidden />
-    {/* blue glow top-right */}
-    <div className="pointer-events-none absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full opacity-15 blur-3xl" style={{ background: "hsl(214 82% 56%)" }} aria-hidden />
-    {/* subtle blue glow bottom-left */}
-    <div className="pointer-events-none absolute -bottom-20 -left-20 h-[350px] w-[350px] rounded-full opacity-10 blur-3xl" style={{ background: "hsl(200 85% 60%)" }} aria-hidden />
+    {/* videoloop als achtergrond */}
+    <HeroMedia variant="background" />
+    {/* donkere sluier: links dicht voor de leesbaarheid van de tekst, rechts open voor het beeld */}
+    <div className="absolute inset-0 lg:hidden" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0.88) 0%, rgba(5,12,26,0.80) 55%, rgba(5,12,26,0.70) 100%)" }} aria-hidden />
+    <div className="absolute inset-0 hidden lg:block" style={{ background: "linear-gradient(90deg, rgba(5,12,26,0.94) 0%, rgba(8,20,40,0.86) 38%, rgba(8,20,40,0.45) 68%, rgba(5,12,26,0.25) 100%)" }} aria-hidden />
+    <div className="absolute inset-x-0 bottom-0 h-40" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0) 0%, rgba(5,12,26,0.65) 100%)" }} aria-hidden />
 
     <div className="container-x relative">
-      <div className="grid items-center gap-10 pb-12 lg:grid-cols-2 lg:gap-20 lg:pb-0">
+      <div className="pb-12 pt-4 lg:pb-16 lg:pt-10">
 
         <motion.div
-          className="text-white"
+          className="max-w-2xl text-white"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
@@ -71,7 +73,7 @@ export const Hero = () => (
             </span>
           </h1>
 
-          <p className="mt-5 max-w-xl text-balance text-base text-white/70 md:text-lg">
+          <p className="mt-5 max-w-xl text-balance text-base text-white/80 md:text-lg">
             Van industriebouw en staalconstructies tot loodsen, sandwichpanelen en gevelrenovatie.
             Vaste prijs, geen verrassingen  -  actief in heel <strong className="font-semibold text-white/90">Limburg, Antwerpen en Vlaanderen</strong>.
           </p>
@@ -101,16 +103,9 @@ export const Hero = () => (
           </motion.div>
 
           {/* micro trust */}
-          <p className="mt-4 text-xs text-white/40">Geen verplichtingen · Reactie binnen 24u · 200+ tevreden klanten</p>
-        </motion.div>
+          <p className="mt-4 text-xs text-white/60">Geen verplichtingen · Reactie binnen 24u · 200+ tevreden klanten</p>
 
-        <motion.div className="lg:pb-10" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.1 }}>
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-            <HeroMedia />
-            {/* gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
-          </div>
-          <div className="mt-4 grid grid-cols-3 gap-3">
+          <div className="mt-8 grid max-w-lg grid-cols-3 gap-3">
             {stats.map((s) => <AnimatedStat key={s.label} n={s.n} label={s.label} />)}
           </div>
         </motion.div>
