@@ -43,17 +43,25 @@ function AnimatedStat({ n, label }: { n: string; label: string }) {
 }
 
 export const Hero = () => (
-  <section id="top" className="relative overflow-hidden pb-0 pt-20 md:pt-24" aria-label="Hero sectie">
-    <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #050c1a 0%, #0c1e38 50%, #122444 100%)" }} aria-hidden />
-    {/* videoloop als achtergrond */}
-    <HeroMedia variant="background" />
-    {/* donkere sluier: links dicht voor de leesbaarheid van de tekst, rechts open voor het beeld */}
-    <div className="absolute inset-0 lg:hidden" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0.88) 0%, rgba(5,12,26,0.80) 55%, rgba(5,12,26,0.70) 100%)" }} aria-hidden />
-    <div className="absolute inset-0 hidden lg:block" style={{ background: "linear-gradient(90deg, rgba(5,12,26,0.94) 0%, rgba(8,20,40,0.86) 38%, rgba(8,20,40,0.45) 68%, rgba(5,12,26,0.25) 100%)" }} aria-hidden />
-    <div className="absolute inset-x-0 bottom-0 h-40" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0) 0%, rgba(5,12,26,0.65) 100%)" }} aria-hidden />
+  <section id="top" className="relative overflow-hidden pb-0 pt-0 lg:pt-24" aria-label="Hero sectie">
+    <div className="absolute inset-0 hidden lg:block" style={{ background: "linear-gradient(135deg, #050c1a 0%, #0c1e38 50%, #122444 100%)" }} aria-hidden />
+    {/* mobiel en tablet: effen donkerblauw, zodat de video naadloos overloopt in de tekst */}
+    <div className="absolute inset-0 lg:hidden" style={{ background: "linear-gradient(180deg, #081428 0%, #0a1a33 70%, #0c1e38 100%)" }} aria-hidden />
 
-    <div className="container-x relative">
-      <div className="pb-12 pt-4 lg:pb-16 lg:pt-10">
+    {/* Videoloop. Mobiel en tablet: eigen helder venster bovenaan, de tekst staat eronder.
+        Desktop: achtergrond over de volle hero. Eén video-element, dus maar één download. */}
+    <div className="relative h-[58svh] min-h-[380px] max-h-[640px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0 lg:max-h-none">
+      <HeroMedia variant="background" />
+      {/* mobiel: lichte rand bovenaan voor het menu, onderaan zacht overlopen in het donkerblauw */}
+      <div className="absolute inset-0 lg:hidden" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0.55) 0%, rgba(5,12,26,0) 20%, rgba(8,20,40,0) 58%, rgba(8,20,40,0.85) 86%, #081428 100%)" }} aria-hidden />
+    </div>
+
+    {/* desktop: donkere sluier links voor de tekst, rechts open voor het beeld */}
+    <div className="absolute inset-0 hidden lg:block" style={{ background: "linear-gradient(90deg, rgba(5,12,26,0.94) 0%, rgba(8,20,40,0.86) 38%, rgba(8,20,40,0.45) 68%, rgba(5,12,26,0.25) 100%)" }} aria-hidden />
+    <div className="absolute inset-x-0 bottom-0 hidden h-40 lg:block" style={{ background: "linear-gradient(180deg, rgba(5,12,26,0) 0%, rgba(5,12,26,0.65) 100%)" }} aria-hidden />
+
+    <div className="container-x relative -mt-16 lg:mt-0">
+      <div className="pb-10 pt-0 lg:pb-16 lg:pt-10">
 
         <motion.div
           className="max-w-2xl text-white"
@@ -61,12 +69,12 @@ export const Hero = () => (
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-sm">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-[#081428]/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white/85 backdrop-blur-sm lg:mb-6 lg:bg-white/5 lg:text-white/80">
             <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-accent" />
             Erkend aannemer · Limburg
           </div>
 
-          <h1 className="max-w-[28ch] text-balance text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-[3.2rem]">
+          <h1 className="max-w-[28ch] text-balance text-[2rem] font-black leading-[1.07] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.2rem]">
             Bedrijfshal of staalconstructie bouwen in Limburg, Antwerpen of NL Limburg?{" "}
             <span style={{ background: "linear-gradient(130deg, hsl(214 82% 72%) 0%, hsl(200 88% 65%) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
               Bradico regelt het.
@@ -113,7 +121,7 @@ export const Hero = () => (
       </div>
     </div>
 
-    <div className="relative mt-12 h-14 overflow-hidden lg:mt-0">
+    <div className="relative mt-4 h-14 overflow-hidden lg:mt-0">
       <svg viewBox="0 0 1440 56" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
         <path d="M0,56 L0,28 C360,56 1080,0 1440,28 L1440,56 Z" fill="hsl(216 14% 97%)" />
       </svg>
