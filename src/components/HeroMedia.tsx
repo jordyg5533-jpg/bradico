@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const MOBILE_QUERY = "(max-width: 639px)";
-const ALT = "Bradico plaatst een wandpaneel met de kraan in een staalconstructie";
+const ALT = "Verreiker van Bradico op de werf naast een staalconstructie in opbouw";
 
 /**
  * Hero-beeld met videoloop.
@@ -54,8 +54,8 @@ export const HeroMedia = ({ variant = "frame" }: { variant?: "frame" | "backgrou
         <img
           src="/video/hero-loop-desktop-poster.webp"
           alt={ALT}
-          width={1920}
-          height={1080}
+          width={1600}
+          height={900}
           className="absolute inset-0 h-full w-full object-cover"
           fetchPriority="high"
           decoding="async"
