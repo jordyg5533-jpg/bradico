@@ -109,12 +109,6 @@ export const Hero = () => (
             <HeroMedia />
             {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent" aria-hidden />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-5">
-              <span className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
-                <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                Rechtstreeks met het Bradico-team
-              </span>
-            </div>
           </div>
           <div className="mt-4 grid grid-cols-3 gap-3">
             {stats.map((s) => <AnimatedStat key={s.label} n={s.n} label={s.label} />)}
