@@ -261,7 +261,7 @@ export const CityPageTemplate = ({ city }: { city: CityData }) => {
           <div className="container-x max-w-xl">
             <motion.div className="text-center mb-10" variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <h2 className="text-2xl font-black text-foreground">Offerte aanvragen in {city.stad}</h2>
-              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur - geen verplichtingen.</p>
+              <p className="mt-3 text-muted-foreground">Vrijblijvend en zonder verplichtingen.</p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <QuoteForm />

@@ -3,12 +3,12 @@ import { Phone, Check, ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 
-const badges = ["Vaste prijs", "Offerte binnen 48u", "Erkend aannemer", "BE + NL Limburg"];
+const badges = ["Vaste prijs", "Vrijblijvende offerte", "Erkend aannemer", "BE + NL Limburg"];
 
 const stats = [
   { n: "15+", label: "jaar vakervaring" },
   { n: "200+", label: "projecten" },
-  { n: "48u", label: "offerte garantie" },
+  { n: "100%", label: "vaste prijs" },
 ];
 
 function AnimatedStat({ n, label }: { n: string; label: string }) {

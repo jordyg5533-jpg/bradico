@@ -3,7 +3,7 @@ import { CityPageTemplate, CityData } from "@/components/CityPageTemplate";
 const city: CityData = {
   stad: "Maaseik",
   metaTitle: "Bedrijfshal Bouwen Maaseik - erkend aannemer Oost-Limburg | Bradico",
-  metaDesc: "Bedrijfshal of loods laten bouwen in Maaseik? Bradico levert staalconstructies en industriebouw op vaste prijs in de Maasregio. Offerte binnen 48 uur.",
+  metaDesc: "Bedrijfshal of loods laten bouwen in Maaseik? Bradico levert staalconstructies en industriebouw op vaste prijs in de Maasregio. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/bedrijfshal-maaseik",
   intro: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Maaseik en de bredere Maasregio. Als gevestigde aannemer in Kinrooi zijn we uw buurtaannemer - we kennen Oost-Limburg van binnenuit en leveren altijd op vaste prijs, sleutelklaar.",
   body: `<p>Maaseik is de hoofdgemeente van Oost-Limburg, gelegen aan de Maas op de grens met Nederland. De regio trekt steeds meer bedrijven aan die profiteren van de strategische ligging, de aantrekkelijke grondenmarkt en de bereikbaarheid via de E314 en N78.</p>
@@ -23,7 +23,7 @@ const city: CityData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Maaseik?",
-      a: "De prijs hangt af van oppervlakte, type constructie, funderingen en gewenste afwerking. Na een gratis terreinbezoek ontvangt u binnen 48 uur een vaste offerte zonder verrassingen.",
+      a: "De prijs hangt af van oppervlakte, type constructie, funderingen en gewenste afwerking. Na een gratis terreinbezoek ontvangt u een vaste offerte zonder verrassingen.",
     },
     {
       q: "Helpt Bradico met de vergunningsaanvraag in Maaseik?",

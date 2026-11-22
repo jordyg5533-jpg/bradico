@@ -2,7 +2,7 @@ import { ServicePageTemplate, ServiceData } from "@/components/ServicePageTempla
 
 const service: ServiceData = {
   metaTitle: "Industriebouw Genk | Bedrijfshallen & Staalconstructies op Maat | Bradico",
-  metaDesc: "Industriebouw in Genk: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Actief in Genk-Zuid, C-mine zone en de volledige E314-corridor. Erkend aannemer, offerte binnen 48 uur.",
+  metaDesc: "Industriebouw in Genk: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Actief in Genk-Zuid, C-mine zone en de volledige E314-corridor. Erkend aannemer, vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/industriebouw-genk",
   h1: "Industriebouw in Genk  -  bedrijfshallen & staalconstructies op maat",
   tagline: "Bradico is uw erkend aannemer voor industriebouw in Genk: de grootste industriezone van Limburg. Vaste prijs, vergunning inbegrepen, sleutelklare oplevering  -  actief in Genk-Zuid, Winterslag, Waterschei en omgeving.",
@@ -30,7 +30,7 @@ const service: ServiceData = {
 <p>Naast Genk is Bradico actief in Hasselt, Maasmechelen, Bilzen, Beringen, Heusden-Zolder en heel Limburg. Bekijk de volledige overzichtspagina <a href="/industriebouw-limburg">industriebouw Limburg</a> of neem contact op voor een gratis terreinbezoek in Genk.</p>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek Genk", desc: "Bradico komt ter plaatse in Genk of omgeving. We bespreken uw noden, bekijken het terrein en beoordelen de funderingscondities op de Genkse industriezone." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde vaste-prijs offerte met alle posten uitgesplitst. Geen meerwerken achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde vaste-prijs offerte met alle posten uitgesplitst. Geen meerwerken achteraf." },
     { nr: "03", title: "Vergunningsaanvraag Genk", desc: "Bradico coördineert architect, EPB-studie en dossier bij Stad Genk of de deputatie. U volgt niets zelf op." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen ploegen. Fundering op maat van de Genkse bodemcondities, montage staalstructuur, sandwichpanelen." },
     { nr: "05", title: "Sleutelklare oplevering Genk", desc: "Poorten, ramen, technische afwerking en keuringen  -  volledig sleutelklaar opgeleverd in Genk op de afgesproken datum." },
@@ -48,7 +48,7 @@ const service: ServiceData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Genk?",
-      a: "De prijs voor een industrieel gebouw in Genk hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Op voormalige mijngrond is een grondonderzoek nodig. Na een gratis terreinbezoek in Genk ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project.",
+      a: "De prijs voor een industrieel gebouw in Genk hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Op voormalige mijngrond is een grondonderzoek nodig. Na een gratis terreinbezoek in Genk ontvangt u een bindende vaste-prijs offerte op maat van uw project.",
     },
     {
       q: "Op welke zones in Genk bouwt Bradico?",

@@ -123,7 +123,7 @@ const KennisOverzicht = () => (
             <div className="mt-12 rounded-2xl bg-dark text-white p-8 text-center">
               <h2 className="text-xl font-black mb-3">Klaar om uw project te starten?</h2>
               <p className="text-white/70 mb-6 max-w-xl mx-auto">
-                Elke situatie is anders. Bradico komt gratis ter plaatse en bezorgt u binnen 48 uur een vaste prijs voor uw industriebouwproject.
+                Elke situatie is anders. Bradico komt gratis ter plaatse en bezorgt u een vaste prijs voor uw industriebouwproject.
               </p>
               <a
                 href="/offerte-industriebouw"

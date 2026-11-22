@@ -9,7 +9,7 @@ export const ContactCTA = () => (
       <motion.div className="text-center mb-14" variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
         <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent">Contact</span>
         <h2 className="mt-3 text-3xl font-black text-foreground md:text-4xl">Bedrijfshal, loods of staalconstructie laten bouwen?</h2>
-        <p className="mt-4 max-w-xl mx-auto text-muted-foreground">Bespreek uw industriebouwproject met Bradico. Gratis terreinbezoek  -  vaste prijs offerte binnen 48 uur. Geen meerwerken, geen verrassingen.</p>
+        <p className="mt-4 max-w-xl mx-auto text-muted-foreground">Bespreek uw industriebouwproject met Bradico. Gratis terreinbezoek  -  altijd een vaste prijs. Geen meerwerken, geen verrassingen.</p>
       </motion.div>
 
       <div className="grid gap-10 lg:grid-cols-2">
@@ -65,12 +65,12 @@ export const ContactCTA = () => (
             <div className="p-6 border-b border-white/8">
               <p className="text-xs font-bold uppercase tracking-[0.18em]" style={{ color: "hsl(214 82% 70%)" }}>Bradico Garantie</p>
               <h3 className="mt-2 text-xl font-black text-white leading-snug">Vaste prijs. Altijd.<br />Geen verrassingen.</h3>
-              <p className="mt-2 text-sm text-white/65 leading-relaxed">Na uw aanvraag plannen we een gratis terreinbezoek. Binnen 48 uur heeft u een volledige vaste-prijs offerte  -  geen meerwerken, geen bijbestellingen.</p>
+              <p className="mt-2 text-sm text-white/65 leading-relaxed">Na uw aanvraag plannen we een gratis terreinbezoek. Daarna heeft u een volledige vaste-prijs offerte  -  geen meerwerken, geen bijbestellingen.</p>
             </div>
             <ul className="p-6 space-y-3">
               {[
                 "Gratis terreinbezoek",
-                "Offerte binnen 48 uur",
+                "Vrijblijvende offerte",
                 "Vaste prijs  -  geen meerwerken",
                 "Vergunning inbegrepen",
                 "Sleutelklare oplevering",

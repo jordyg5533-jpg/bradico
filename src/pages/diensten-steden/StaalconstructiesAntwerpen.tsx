@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Antwerpen | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies in Antwerpen en de haven? Bradico bouwt bedrijfshallen en loodsen op vaste prijs. Actief in Antwerpen-Noord, -Oost en haven. Offerte binnen 48u.",
+  metaDesc: "Staalconstructies in Antwerpen en de haven? Bradico bouwt bedrijfshallen en loodsen op vaste prijs. Actief in Antwerpen-Noord, -Oost en haven. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-antwerpen",
   h1: "Staalconstructies Antwerpen",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -27,12 +27,12 @@ const data: ServiceCityData = {
 <p>De Waaslandhaven op de linkeroever groeit snel. Nieuwe percelen worden aangeboden en bedrijven die de rechterover mijden vanwege de congestie vinden op de linkeroever ruimere percelen en vlotte toegang via de A11 en de Liefkenshoektunnel. Bradico bouwt op beide oevers - met dezelfde werkwijze en dezelfde vaste-prijs garantie.</p>
 
 <h2>Offerte aanvragen in Antwerpen</h2>
-<p>Heeft u een perceel in Antwerpen of de havenregio en wilt u weten wat een staalconstructie op maat kost? Bel ons voor een eerste gesprek of vul het formulier hieronder in. Na terreinbezoek bezorgen we u binnen 48 uur een gedetailleerde offerte.</p>`,
+<p>Heeft u een perceel in Antwerpen of de havenregio en wilt u weten wat een staalconstructie op maat kost? Bel ons voor een eerste gesprek of vul het formulier hieronder in. Na terreinbezoek bezorgen we u een gedetailleerde offerte.</p>`,
   why: [
     { t: "Havenervaring", d: "Bradico heeft ervaring met de technische en administratieve vereisten van bouwen in en om de Antwerpse haven." },
     { t: "Grote overspanningen", d: "We bouwen staalconstructies met overspanningen tot 30 meter en meer - zonder tussenkolommen voor maximale vloervrijheid." },
     { t: "Volledige begeleiding", d: "Van omgevingsvergunning tot sleutelklare oplevering - inclusief coördinatie met het Havenbedrijf waar nodig." },
-    { t: "Vaste prijs na terreinbezoek", d: "We komen naar Antwerpen voor een terreinbezoek en bezorgen u binnen 48 uur een exacte offerte zonder verborgen kosten." },
+    { t: "Vaste prijs na terreinbezoek", d: "We komen naar Antwerpen voor een terreinbezoek en bezorgen u een exacte offerte zonder verborgen kosten." },
   ],
   faq: [
     {

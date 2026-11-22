@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Sint-Truiden | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies in Sint-Truiden en Haspengouw? Bradico bouwt bedrijfshallen op vaste prijs langs de E40. Actief in KMO-zone Brusthem. Offerte in 48u.",
+  metaDesc: "Staalconstructies in Sint-Truiden en Haspengouw? Bradico bouwt bedrijfshallen op vaste prijs langs de E40. Actief in KMO-zone Brusthem. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-sint-truiden",
   h1: "Staalconstructies Sint-Truiden",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -27,7 +27,7 @@ const data: ServiceCityData = {
 <p>De fruitstreek rond Sint-Truiden kent ook een grote vraag naar agrarische staalconstructies: fruitstoringen, koelinrichtingen, machineloodsen en serres. Bradico heeft ervaring met het bouwen van agrarische gebouwen die voldoen aan de specifieke vereisten van de landbouwsector - inclusief ventilatievoorzieningen, betonnen vloeropbouw voor zware machines en hoge vrije hoogte voor hefstapelinstallaties.</p>
 
 <h2>Offerte aanvragen in Sint-Truiden</h2>
-<p>Bent u ondernemer of landbouwer in Sint-Truiden en wilt u een staalconstructie laten bouwen? Bel ons voor een vrijblijvend gesprek of vul het formulier in. Na terreinbezoek bezorgen we u een vaste-prijs offerte binnen 48 uur.</p>`,
+<p>Bent u ondernemer of landbouwer in Sint-Truiden en wilt u een staalconstructie laten bouwen? Bel ons voor een vrijblijvend gesprek of vul het formulier in. Na terreinbezoek bezorgen we u een vaste-prijs offerte.</p>`,
   why: [
     { t: "KMO-focus", d: "Bradico is sterk in staalconstructies voor middelgrote bedrijven - precies het segment dat actief is in de KMO-zones van Sint-Truiden." },
     { t: "Agrarische ervaring", d: "We bouwen ook voor de landbouwsector: fruitstoringen, machineloodsen en opslagruimten met specifieke technische vereisten." },

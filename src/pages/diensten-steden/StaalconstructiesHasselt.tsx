@@ -42,7 +42,7 @@ const data: ServiceCityData = {
     },
     {
       q: "Hoe snel krijg ik een offerte voor een staalconstructie in Hasselt?",
-      a: "Na een terreinbezoek ontvangt u binnen 48 uur een gedetailleerde vaste-prijs offerte. Voor eenvoudige projecten soms sneller.",
+      a: "Na een terreinbezoek ontvangt u een gedetailleerde vaste-prijs offerte. Voor eenvoudige projecten soms sneller.",
     },
     {
       q: "Regelt Bradico de vergunning bij de stad Hasselt?",

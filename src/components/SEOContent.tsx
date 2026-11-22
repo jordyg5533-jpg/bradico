@@ -16,7 +16,7 @@ const sections = [
   },
   {
     h2: "Loods bouwen in Belgisch en Nederlands Limburg",
-    text: "Bradico bouwt loodsen en opslaghallen voor landbouwbedrijven, handelaars, distributeurs en kmo's in heel Limburg. Onze loodsen zijn robuust, goed geïsoleerd en energiezuinig. We werken in Belgisch Limburg  -  Hasselt, Genk, Bilzen, Tongeren, Lommel, Kinrooi, Maaseik  -  én over de grens in Nederlands Limburg. Vraag een gratis offerte aan  -  reactie binnen 48 uur na terreinbezoek.",
+    text: "Bradico bouwt loodsen en opslaghallen voor landbouwbedrijven, handelaars, distributeurs en kmo's in heel Limburg. Onze loodsen zijn robuust, goed geïsoleerd en energiezuinig. We werken in Belgisch Limburg  -  Hasselt, Genk, Bilzen, Tongeren, Lommel, Kinrooi, Maaseik  -  én over de grens in Nederlands Limburg. Vraag een gratis offerte aan  -  volledig vrijblijvend.",
   },
 ];
 

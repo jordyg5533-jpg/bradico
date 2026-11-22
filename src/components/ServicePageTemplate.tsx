@@ -31,6 +31,7 @@ const cityLinks = [
   { l: "Industriebouw Hasselt", h: "/industriebouw-hasselt" },
   { l: "Industriebouw Genk", h: "/industriebouw-genk" },
   { l: "Industriebouw Maasmechelen", h: "/industriebouw-maasmechelen" },
+  { l: "Industriebouw Antwerpen", h: "/industriebouw-antwerpen" },
   { l: "Bedrijfshal Hasselt", h: "/bedrijfshal-hasselt" },
   { l: "Bedrijfshal Genk", h: "/bedrijfshal-genk" },
   { l: "Bedrijfshal Sint-Truiden", h: "/bedrijfshal-sint-truiden" },
@@ -257,7 +258,7 @@ export const ServicePageTemplate = ({ service }: { service: ServiceData }) => {
           <div className="container-x max-w-xl">
             <motion.div className="text-center mb-10" variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <h2 className="text-2xl font-black text-foreground">Offerte aanvragen</h2>
-              <p className="mt-3 text-muted-foreground">Reactie binnen 48 uur - geen verplichtingen.</p>
+              <p className="mt-3 text-muted-foreground">Vrijblijvend en zonder verplichtingen.</p>
             </motion.div>
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={viewport}>
               <QuoteForm />

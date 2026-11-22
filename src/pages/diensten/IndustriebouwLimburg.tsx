@@ -2,7 +2,7 @@ import { ServicePageTemplate, ServiceData } from "@/components/ServicePageTempla
 
 const service: ServiceData = {
   metaTitle: "Industriebouw Limburg | Erkend Aannemer Bedrijfshallen & Staalconstructies | Bradico",
-  metaDesc: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Erkend aannemer  -  vergunning inbegrepen, sleutelklaar. Offerte binnen 48 uur. Actief in Hasselt, Genk, Maasmechelen en heel Limburg.",
+  metaDesc: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Erkend aannemer  -  vergunning inbegrepen, sleutelklaar. Vrijblijvende offerte. Actief in Hasselt, Genk, Maasmechelen en heel Limburg.",
   canonical: "https://www.bv-bradico.be/industriebouw-limburg",
   h1: "Industriebouw Limburg  -  bedrijfshallen, staalconstructies & loodsen op maat",
   tagline: "Bradico realiseert industriebouwprojecten in Limburg van A tot Z: vergunning, staalconstructie, sandwichpanelen, sleutelklare oplevering. Erkend aannemer, altijd op vaste prijs, één aanspreekpunt.",
@@ -23,7 +23,7 @@ const service: ServiceData = {
 
 <h2>Kostprijs industriebouw in Limburg: prijs op aanvraag</h2>
 <p>De prijs van een industrieel gebouw in Limburg hangt af van vier factoren: de constructievorm, de oppervlakte, de isolatiegraad en de gevraagde afwerking. Bradico werkt uitsluitend met vaste-prijs offertes na terreinbezoek  -  nooit een vrijblijvende schatting die nadien uitloopt.</p>
-<p>Elke situatie is anders. Het type gebouw, de bodemgesteldheid van uw terrein en de gewenste afwerking bepalen de exacte prijs. Na een gratis terreinbezoek ontvangt u binnen 48 uur een bindende vaste-prijs offerte voor uw specifiek project.</p>
+<p>Elke situatie is anders. Het type gebouw, de bodemgesteldheid van uw terrein en de gewenste afwerking bepalen de exacte prijs. Na een gratis terreinbezoek ontvangt u een bindende vaste-prijs offerte voor uw specifiek project.</p>
 <p>Funderingskosten variëren sterk per locatie. Op slappe bodems langs de Maas (Maasmechelen, Maaseik, Dilsen-Stokkem) of op voormalige mijnterreinen (Genk, Beringen) zijn paalfunderingen soms nodig. Bradico communiceert deze kosten transparant na grondonderzoek, vóór aanvang van de werken.</p>
 
 <h2>Staalconstructie of betonbouw  -  wat kiest u voor uw bedrijfshal?</h2>
@@ -47,7 +47,7 @@ const service: ServiceData = {
 </ul>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek", desc: "Bradico komt ter plaatse. We bespreken uw noden, bekijken het terrein en beoordelen de funderingscondities voor uw industrieel bouwproject in Limburg." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde offerte met alle posten uitgesplitst. Vaste prijs  -  geen meerwerken of factuurverrassingen achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde offerte met alle posten uitgesplitst. Vaste prijs  -  geen meerwerken of factuurverrassingen achteraf." },
     { nr: "03", title: "Vergunningsaanvraag", desc: "Bradico coördineert architect, EPB-verslaggever en omgevingsvergunningsaanvraag. U hoeft zelf geen administratie op te volgen." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen ploegen en materieel. Fundering op maat van de bodemcondities, montage staalstructuur, sandwichpanelen wand en dak." },
     { nr: "05", title: "Sleutelklare oplevering", desc: "Poorten, ramen, technische afwerking en keuringen  -  volledig sleutelklaar opgeleverd op de afgesproken datum. Garantie op materialen en uitvoering." },
@@ -61,7 +61,7 @@ const service: ServiceData = {
   faq: [
     {
       q: "Wat kost industriebouw per m² in Limburg?",
-      a: "De prijs van industriebouw in Limburg hangt af van het type gebouw, de oppervlakte, de bodemgesteldheid en de gewenste afwerking. Elke situatie is anders. Na een gratis terreinbezoek ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project - zonder verborgen kosten.",
+      a: "De prijs van industriebouw in Limburg hangt af van het type gebouw, de oppervlakte, de bodemgesteldheid en de gewenste afwerking. Elke situatie is anders. Na een gratis terreinbezoek ontvangt u een bindende vaste-prijs offerte op maat van uw project - zonder verborgen kosten.",
     },
     {
       q: "Hoe lang duurt het bouwen van een industrieel gebouw in Limburg?",
@@ -101,7 +101,7 @@ const service: ServiceData = {
     },
     {
       q: "Hoe snel kan ik een offerte ontvangen?",
-      a: "Na een gratis terreinbezoek ontvangt u binnen 48 uur een gedetailleerde vaste-prijs offerte met alle posten uitgesplitst: staalconstructie, fundering, sandwichpanelen, deuren en technische afwerking. Contacteer ons via het formulier of bel op +32 472 81 29 52.",
+      a: "Na een gratis terreinbezoek ontvangt u een gedetailleerde vaste-prijs offerte met alle posten uitgesplitst: staalconstructie, fundering, sandwichpanelen, deuren en technische afwerking. Contacteer ons via het formulier of bel op +32 472 81 29 52.",
     },
     {
       q: "Wat is de minimale projectomvang voor industriebouw bij Bradico?",

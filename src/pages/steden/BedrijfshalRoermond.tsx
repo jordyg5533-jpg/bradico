@@ -3,12 +3,12 @@ import { CityPageTemplate, CityData } from "@/components/CityPageTemplate";
 const city: CityData = {
   stad: "Roermond",
   metaTitle: "Bedrijfshal Bouwen Roermond - vaste prijs, sleutelklaar | Bradico",
-  metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Roermond? Bradico is gevestigd in Kinrooi, op 20 minuten van Roermond. Vaste prijs, offerte binnen 48 uur.",
+  metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Roermond? Bradico is gevestigd in Kinrooi, op 20 minuten van Roermond. Vaste prijs, vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/bedrijfshal-roermond",
-  intro: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Roermond - sleutelklaar op vaste prijs. Wij zijn gevestigd in het Belgische Kinrooi, op 20 minuten rijden van Roermond. Offerte binnen 48 uur na terreinbezoek.",
+  intro: "Bradico bouwt bedrijfshallen, loodsen en staalconstructies in Roermond - sleutelklaar op vaste prijs. Wij zijn gevestigd in het Belgische Kinrooi, op 20 minuten rijden van Roermond. Vrijblijvende offerte na terreinbezoek.",
   body: `<p>Roermond is het economische hart van Midden-Limburg en een belangrijke logistieke schakel in het zuiden van Nederland. De industrieterreinen Roermond-Maasniel, Kapellerpoort en Witte Leeuw - strategisch gelegen aan de oevers van de Maas - huisvesten uiteenlopende bedrijven in productie, logistiek en groothandel. De kruising van de A73 en de A2 maakt Roermond tot een van de best ontsloten regio's in Limburg NL, met directe verbindingen naar Venlo, Eindhoven en Maastricht.</p>
 <p>Bradico is een Belgisch staalconstructiebedrijf gevestigd in Kinrooi, op slechts 20 minuten rijden van Roermond. Wij werken regelmatig aan weerszijden van de Maas en kennen zowel de Belgische als de Nederlandse context van vergunningen, grondslagen en bouwregelgeving. Voor opdrachtgevers in Roermond betekent dit geen extra reiskosten, snelle terreinbezoeken en een aannemer die vlot bereikbaar is. We bouwen bedrijfshallen en loodsen voor bedrijven in Roermond, Maasniel, Herten, Swalmen en Sint Odilienberg.</p>
-<p>Elk project start met een persoonlijk terreinbezoek waarbij we uw locatie, uw activiteit en uw wensen grondig in kaart brengen. Op basis daarvan ontwerpen we een stalen hal op maat en bezorgen we u binnen 48 uur een vaste-prijs offerte - volledig transparant, inclusief ruwbouw, dakwerken en buitenschrijnwerk. De omgevingsvergunning begeleiden we in samenwerking met lokale architecten die de Roermondse procedures kennen.</p>`,
+<p>Elk project start met een persoonlijk terreinbezoek waarbij we uw locatie, uw activiteit en uw wensen grondig in kaart brengen. Op basis daarvan ontwerpen we een stalen hal op maat en bezorgen we u een vaste-prijs offerte - volledig transparant, inclusief ruwbouw, dakwerken en buitenschrijnwerk. De omgevingsvergunning begeleiden we in samenwerking met lokale architecten die de Roermondse procedures kennen.</p>`,
   deelgemeenten: ["Roermond", "Maasniel", "Herten", "Swalmen", "Sint Odilienberg"],
   buursteden: [
     { naam: "Weert", href: "/bedrijfshal-weert" },
@@ -23,7 +23,7 @@ const city: CityData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Roermond?",
-      a: "De prijs wordt bepaald door de afmetingen, het afwerkingsniveau en de locatie op het terrein. Na een terreinbezoek ontvangt u binnen 48 uur een vaste-prijs offerte in euro's, zonder verborgen kosten.",
+      a: "De prijs wordt bepaald door de afmetingen, het afwerkingsniveau en de locatie op het terrein. Na een terreinbezoek ontvangt u een vaste-prijs offerte in euro's, zonder verborgen kosten.",
     },
     {
       q: "Werkt Bradico ook met de Nederlandse omgevingsvergunning?",

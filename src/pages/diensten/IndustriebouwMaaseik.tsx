@@ -43,7 +43,7 @@ const service: ServiceData = {
 </ul>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek Maaseik", desc: "Bradico komt ter plaatse in Maaseik of Oost-Limburg - we zijn gevestigd in Kinrooi, op enkele minuten van Maaseik. We bespreken uw noden en bekijken het terrein." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst - geen meerwerken of factuurverrassingen achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst - geen meerwerken of factuurverrassingen achteraf." },
     { nr: "03", title: "Vergunningsaanvraag Maaseik", desc: "Bradico coördineert de architect, EPB-studie en het dossier bij gemeente Maaseik of de deputatie. We kennen de specifieke regels voor bouwen in de Maasvallei." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen ploegen: fundering op maat van de bodemcondities in Oost-Limburg, montage staalstructuur, sandwichpanelen wand en dak." },
     { nr: "05", title: "Sleutelklare oplevering", desc: "Poorten, ramen, technische afwerking en keuringen - volledig sleutelklaar opgeleverd in Maaseik op de afgesproken datum." },
@@ -61,7 +61,7 @@ const service: ServiceData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Maaseik?",
-      a: "De prijs voor een industrieel gebouw in de regio Maaseik hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. In de Maasvallei zijn soms specifieke funderingstechnieken nodig. Na een gratis terreinbezoek ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project.",
+      a: "De prijs voor een industrieel gebouw in de regio Maaseik hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. In de Maasvallei zijn soms specifieke funderingstechnieken nodig. Na een gratis terreinbezoek ontvangt u een bindende vaste-prijs offerte op maat van uw project.",
     },
     {
       q: "Regelt Bradico de vergunning bij gemeente Maaseik?",

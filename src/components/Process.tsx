@@ -4,7 +4,7 @@ import { staggerContainer, staggerItem, viewport } from "@/lib/animations";
 const steps = [
   { nr: "01", title: "Terreinbezoek", desc: "We komen ter plaatse, nemen de maten op en bespreken uw wensen en plannen." },
   { nr: "02", title: "Ontwerp & vergunning", desc: "Wij verzorgen het technisch ontwerp en helpen bij de vergunningsaanvraag." },
-  { nr: "03", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde offerte met vaste prijs  -  geen extra verrassingen." },
+  { nr: "03", title: "Vaste-prijs offerte", desc: "Een gedetailleerde offerte met vaste prijs  -  geen extra verrassingen." },
   { nr: "04", title: "Realisatie", desc: "Ons team voert de bouw uit volgens planning. U heeft één vast aanspreekpunt." },
   { nr: "05", title: "Oplevering & nazorg", desc: "Sleutelklare oplevering met volledige documentatie en nazorggarantie." },
 ];

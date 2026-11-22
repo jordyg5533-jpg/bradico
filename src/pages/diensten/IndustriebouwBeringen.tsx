@@ -43,7 +43,7 @@ const service: ServiceData = {
 </ul>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek Beringen", desc: "Bradico komt ter plaatse in Beringen of de Mijnstreek. We bespreken uw noden, bekijken het terrein en beoordelen de bodemcondities - ook op voormalige mijnterreinen." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst - geen meerwerken of factuurverrassingen achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst - geen meerwerken of factuurverrassingen achteraf." },
     { nr: "03", title: "Vergunningsaanvraag Beringen", desc: "Bradico coördineert de architect, EPB-studie en het dossier bij gemeente Beringen of de deputatie. U volgt niets zelf op." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen montageploegen: fundering op maat, montage staalstructuur, sandwichpanelen wand en dak." },
     { nr: "05", title: "Sleutelklare oplevering", desc: "Poorten, ramen, technische afwerking en keuringen - volledig sleutelklaar opgeleverd in Beringen op de afgesproken datum." },
@@ -61,7 +61,7 @@ const service: ServiceData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Beringen?",
-      a: "De prijs voor een industrieel gebouw in de regio Beringen hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Op voormalige mijnterreinen is een grondonderzoek vereist. Na een gratis terreinbezoek ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project.",
+      a: "De prijs voor een industrieel gebouw in de regio Beringen hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Op voormalige mijnterreinen is een grondonderzoek vereist. Na een gratis terreinbezoek ontvangt u een bindende vaste-prijs offerte op maat van uw project.",
     },
     {
       q: "Regelt Bradico de vergunning bij gemeente Beringen?",

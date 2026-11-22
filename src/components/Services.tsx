@@ -8,6 +8,7 @@ const services = [
   { title: "Loodsen & magazijnen", desc: "Opslagloods, distributiehal of magazijn op maat  -  wij bouwen het naar uw afmetingen en budget.", href: "/loodsen-magazijnen", img: "/projects/loods-na.jpg" },
   { title: "Staalbouw Limburg", desc: "Specialist in staalbouw in heel Limburg: van eenvoudige loodsen tot grote industriële complexen. Vaste prijs, sleutelklaar.", href: "/staalbouw-limburg", img: "/projects/bhal3.jpeg" },
   { title: "Staalconstructie op maat", desc: "Elk project is anders. Bradico ontwerpt en bouwt staalconstructies volledig op maat van uw activiteit en terrein.", href: "/staalconstructie-op-maat", img: "/projects/bedrijfshal-na.jpg" },
+  { title: "Stallenbouw & landbouw", desc: "Stal, machineloods of hangar op uw landbouwbedrijf. Grote overspanningen, korte hinder op het erf, vaste prijs.", href: "/stallenbouw-limburg", img: "/projects/loods-2.jpg" },
   { title: "Sandwichpanelen", desc: "Isolerende sandwichpanelen voor gevel en dak. Energie-efficiënt, duurzaam en snel geplaatst.", href: "/sandwichpanelen", img: "/projects/gvl5.jpeg" },
   { title: "Gevelrenovatie", desc: "Versleten gevel of dak vernieuwen? Wij renoveren industriële gevels snel en met minimale hinder.", href: "/gevelrenovatie-industrieel", img: "/projects/gevelrenovatie-na.jpg" },
 ];

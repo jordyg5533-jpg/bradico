@@ -2,7 +2,7 @@ import { KennisPageTemplate, KennisData } from "@/components/KennisPageTemplate"
 
 const kennis: KennisData = {
   metaTitle: "Industriële loods bouwen - alles wat u moet weten | Bradico Limburg",
-  metaDesc: "Industriële loods laten bouwen in Limburg? Alles over types loodsen, vergunningen, kosten en het bouwproces van Bradico. Offerte binnen 48 uur na terreinbezoek.",
+  metaDesc: "Industriële loods laten bouwen in Limburg? Alles over types loodsen, vergunningen, kosten en het bouwproces van Bradico. Vrijblijvende offerte na terreinbezoek.",
   canonical: "https://www.bv-bradico.be/kennis/industriele-loods-bouwen",
   h1: "Industriële loods bouwen - alles wat u moet weten",
   intro: "Een industriële loods bouwen is een grote investering. Bradico legt uit welke types loodsen er zijn, wat de kostprijs bepaalt, welke vergunningen u nodig heeft en hoe het bouwproces stap voor stap verloopt.",

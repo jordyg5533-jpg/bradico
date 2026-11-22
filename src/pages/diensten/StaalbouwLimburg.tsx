@@ -5,10 +5,10 @@ const service: ServiceData = {
   metaDesc: "Staalbouw in Limburg: bedrijfshallen, loodsen en industriële gebouwen in staalconstructie. Bradico bouwt sneller, duurzamer en met volledige begeleiding.",
   canonical: "https://www.bv-bradico.be/staalbouw-limburg",
   h1: "Staalbouw in Limburg  -  bedrijfshallen en loodsen op maat",
-  tagline: "Bradico bouwt staalbouw in heel Limburg: van eenvoudige opslagloodsen tot grote industriële complexen. Vaste prijs, offerte binnen 48 uur na terreinbezoek.",
+  tagline: "Bradico bouwt staalbouw in heel Limburg: van eenvoudige opslagloodsen tot grote industriële complexen. Vaste prijs, vrijblijvende offerte na terreinbezoek.",
   img: "/projects/bhal3.jpeg",
   imgAlt: "Staalbouw Limburg  -  Bradico bedrijfshal staalconstructie",
-  badges: ["Vaste prijs", "Offerte 48u", "Heel Limburg", "Sleutelklaar"],
+  badges: ["Vaste prijs", "Vrijblijvend", "Heel Limburg", "Sleutelklaar"],
   intro: `<p>Staalbouw is de snelste en meest flexibele manier om een industrieel gebouw op te trekken. Of u nu een loods nodig heeft voor opslag, een productiefaciliteit of een magazijn voor uw logistieke activiteiten  -  een staalconstructie levert u in kortere tijd een robuust, duurzaam gebouw dan traditionele bouwmethodes.</p>
 <p>Bradico is actief als staalbouwer in heel Limburg: Hasselt, Genk, Tongeren, Sint-Truiden, Maasmechelen, Maaseik en omliggende gemeenten. Wij begeleiden elk project van eerste gesprek tot sleutelklare oplevering  -  met een vaste prijs en geen meerwerken.</p>`,
   body: `<h2>Wat is staalbouw?</h2>
@@ -29,7 +29,7 @@ const service: ServiceData = {
   steps: [
     { nr: "01", title: "Eerste gesprek", desc: "U beschrijft uw project, wij luisteren en stellen de juiste vragen." },
     { nr: "02", title: "Terreinbezoek", desc: "Onze technici komen ter plaatse en nemen alle relevante maten op." },
-    { nr: "03", title: "Vaste offerte 48u", desc: "Na terreinbezoek ontvangt u een gedetailleerde vaste-prijs offerte." },
+    { nr: "03", title: "Vaste offerte", desc: "Na terreinbezoek ontvangt u een gedetailleerde vaste-prijs offerte." },
     { nr: "04", title: "Prefabricage", desc: "Staalprofielen worden geprefabriceerd in de werkplaats." },
     { nr: "05", title: "Montage op werf", desc: "Snelle en veilige montage door ons ervaren team." },
     { nr: "06", title: "Sleutelklare oplevering", desc: "U ontvangt de sleutels met volledige technische documentatie." },

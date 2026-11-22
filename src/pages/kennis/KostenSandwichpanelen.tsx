@@ -17,7 +17,7 @@ const kennis: KennisData = {
 <p>Naast de kern is het onderscheid tussen wandpanelen en dakpanelen cruciaal. <strong>Wandpanelen</strong> zijn verticaal geplaatst, met zichtbare profielen en een esthetische buitenzijde. <strong>Dakpanelen</strong> hebben een hogere waterafstoot-druk, specifieke overlappingsdetails en worden doorgaans in grotere diktes geleverd.</p>
 
 <h2>Prijs aanvragen voor uw project</h2>
-<p>De prijs van sandwichpanelen wordt altijd op maat berekend voor uw specifieke project door <a href="/sandwichpanelen" class="text-accent hover:underline">Bradico</a>. De eindprijs hangt af van meerdere factoren die hieronder worden uitgelegd. Een exacte prijs vraagt u aan via een gratis terreinbezoek - binnen 48 uur bezorgen wij u een vaste-prijs offerte zonder verborgen meerkosten.</p>
+<p>De prijs van sandwichpanelen wordt altijd op maat berekend voor uw specifieke project door <a href="/sandwichpanelen" class="text-accent hover:underline">Bradico</a>. De eindprijs hangt af van meerdere factoren die hieronder worden uitgelegd. Een exacte prijs vraagt u aan via een gratis terreinbezoek - daarna bezorgen wij u een vaste-prijs offerte zonder verborgen meerkosten.</p>
 
 <h2>Wat bepaalt de prijs?</h2>
 <p>Zes factoren sturen de uiteindelijke kostprijs het meest:</p>
@@ -36,7 +36,7 @@ const kennis: KennisData = {
 <p>Bij <a href="/bedrijfshal-hasselt" class="text-accent hover:underline">nieuwbouw bedrijfshal Hasselt</a> en omgeving rekent Bradico sandwichpanelen standaard in de totaalprijs mee. U betaalt één vaste prijs voor het volledige project.</p>
 
 <h2>Hoe een offerte aanvragen?</h2>
-<p>De snelste manier is een gratis terreinbezoek aanvragen via onze <a href="/sandwichpanelen" class="text-accent hover:underline">sandwichpanelen-pagina</a>. Bradico meet ter plaatse op, bepaalt het type paneel dat past bij uw activiteit en EPB-vereisten, en bezorgt u binnen 48 uur een vaste prijs. Geen meerprijzen achteraf. Lees ook meer over <a href="/kennis/stalen-gevelbeplating" class="text-accent hover:underline">stalen gevelbeplating</a> voor een bredere vergelijking van geveltypes.</p>`,
+<p>De snelste manier is een gratis terreinbezoek aanvragen via onze <a href="/sandwichpanelen" class="text-accent hover:underline">sandwichpanelen-pagina</a>. Bradico meet ter plaatse op, bepaalt het type paneel dat past bij uw activiteit en EPB-vereisten, en bezorgt u een vaste prijs. Geen meerprijzen achteraf. Lees ook meer over <a href="/kennis/stalen-gevelbeplating" class="text-accent hover:underline">stalen gevelbeplating</a> voor een bredere vergelijking van geveltypes.</p>`,
   faq: [
     {
       q: "Wat kost een sandwichpaneel per m² inclusief plaatsing?",

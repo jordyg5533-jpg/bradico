@@ -25,6 +25,7 @@ export const Footer = () => (
             <li><a href="/staalconstructies-limburg" className="hover:text-accent transition-smooth">Staalconstructies</a></li>
             <li><a href="/bedrijfshallen-bouwen" className="hover:text-accent transition-smooth">Bedrijfshallen bouwen</a></li>
             <li><a href="/loodsen-magazijnen" className="hover:text-accent transition-smooth">Loodsen & magazijnen</a></li>
+            <li><a href="/stallenbouw-limburg" className="hover:text-accent transition-smooth">Stallenbouw & landbouw</a></li>
             <li><a href="/sandwichpanelen" className="hover:text-accent transition-smooth">Sandwichpanelen</a></li>
             <li><a href="/gevelrenovatie-industrieel" className="hover:text-accent transition-smooth">Gevelrenovatie</a></li>
           </ul>
@@ -61,6 +62,7 @@ export const Footer = () => (
             <li><a href="/industriebouw-lommel" className="hover:text-accent transition-smooth">Industriebouw Lommel</a></li>
             <li><a href="/industriebouw-beringen" className="hover:text-accent transition-smooth">Industriebouw Beringen</a></li>
             <li><a href="/industriebouw-maaseik" className="hover:text-accent transition-smooth">Industriebouw Maaseik</a></li>
+            <li><a href="/industriebouw-antwerpen" className="hover:text-accent transition-smooth">Industriebouw Antwerpen</a></li>
           </ul>
         </div>
 

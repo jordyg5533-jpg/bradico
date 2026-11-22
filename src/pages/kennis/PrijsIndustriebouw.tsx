@@ -51,7 +51,7 @@ const kennis: KennisData = {
 <ol>
   <li><strong>Neem contact op</strong> via het contactformulier op onze website. Beschrijf het gewenste type gebouw, de oppervlakte en uw tijdlijn.</li>
   <li><strong>Terreinbezoek</strong>: Onze technici komen ter plaatse, bekijken het terrein en bespreken uw noden in detail.</li>
-  <li><strong>Vaste prijs binnen 48 uur</strong>: Na het terreinbezoek ontvangt u een gedetailleerde, vaste-prijs offerte  -  inclusief staalconstructie, gevelbeplating, dak, poorten en alle standaard onderdelen.</li>
+  <li><strong>Altijd een vaste prijs</strong>: Na het terreinbezoek ontvangt u een gedetailleerde, vaste-prijs offerte  -  inclusief staalconstructie, gevelbeplating, dak, poorten en alle standaard onderdelen.</li>
 </ol>
 <p>Meer lezen over het bouwen van een bedrijfshal of industriële loods? Bekijk onze pagina's over <a href="/staalconstructies-limburg">staalconstructies in Limburg</a> en <a href="/bedrijfshallen-bouwen">bedrijfshallen bouwen</a>.</p>`,
   faq: [

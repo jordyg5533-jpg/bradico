@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Genk | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies bouwen in Genk? Bradico werkt in Genk-Noord, Logistics Genk en omgeving. Vaste prijs, sleutelklaar. Offerte binnen 48 uur.",
+  metaDesc: "Staalconstructies bouwen in Genk? Bradico werkt in Genk-Noord, Logistics Genk en omgeving. Vaste prijs, sleutelklaar. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-genk",
   h1: "Staalconstructies Genk",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -53,7 +53,7 @@ const data: ServiceCityData = {
     },
     {
       q: "Wat is de gemiddelde kostprijs van een staalconstructie in Genk?",
-      a: "De prijs is afhankelijk van afmetingen, hoogte, isolatiewaarden en gebruiksfunctie. Na een terreinbezoek ontvangt u een exacte offerte op vaste prijs binnen 48 uur.",
+      a: "De prijs is afhankelijk van afmetingen, hoogte, isolatiewaarden en gebruiksfunctie. Na een terreinbezoek ontvangt u een exacte offerte op vaste prijs.",
     },
   ],
   relatedServices: [

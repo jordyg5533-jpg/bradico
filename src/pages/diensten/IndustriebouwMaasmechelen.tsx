@@ -2,7 +2,7 @@ import { ServicePageTemplate, ServiceData } from "@/components/ServicePageTempla
 
 const service: ServiceData = {
   metaTitle: "Industriebouw Maasmechelen | Bedrijfshallen & Staalconstructies | Bradico",
-  metaDesc: "Industriebouw in Maasmechelen: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Actief langs de E314 en de Maas. Erkend aannemer, vergunning inbegrepen, offerte binnen 48 uur.",
+  metaDesc: "Industriebouw in Maasmechelen: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Actief langs de E314 en de Maas. Erkend aannemer, vergunning inbegrepen, vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/industriebouw-maasmechelen",
   h1: "Industriebouw in Maasmechelen  -  bedrijfshallen & loodsen op maat",
   tagline: "Bradico is uw erkend aannemer voor industriebouw in Maasmechelen: langs de E314, de Maas en de industriezones van Eisden, Opgrimbie en Maasmechelen-centrum. Vaste prijs, vergunning inbegrepen, sleutelklaar.",
@@ -30,7 +30,7 @@ const service: ServiceData = {
 <p>Maasmechelen ligt op slechts 15 km van Maastricht. Bradico is een van de weinige aannemers die actief zijn aan beide zijden van de grens: industriebouwprojecten in het Belgische Maasmechelen, maar ook in het Nederlandse Maastricht, Sittard-Geleen en heel Nederlands Limburg. Bekijk ook onze pagina <a href="/industriebouw-limburg">industriebouw Limburg</a> voor een volledig overzicht van ons werkgebied.</p>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek Maasmechelen", desc: "Bradico komt ter plaatse in Maasmechelen. We bekijken het terrein, bespreken uw noden en beoordelen de bodemcondities langs de Maas." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde vaste-prijs offerte  -  inclusief funderingsadvies bij slappe Maaslandbodems. Geen meerwerken achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde vaste-prijs offerte  -  inclusief funderingsadvies bij slappe Maaslandbodems. Geen meerwerken achteraf." },
     { nr: "03", title: "Vergunningsaanvraag Maasmechelen", desc: "Bradico coördineert architect, EPB-studie en dossier bij Gemeente Maasmechelen of de deputatie. Inbegrepen in de totaalformule." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen ploegen. Fundering op maat van de Maaslandse bodemcondities, montage staalstructuur en sandwichpanelen." },
     { nr: "05", title: "Sleutelklare oplevering", desc: "Poorten, ramen, technische afwerking en keuringen  -  volledig sleutelklaar opgeleverd in Maasmechelen op de afgesproken datum." },
@@ -48,7 +48,7 @@ const service: ServiceData = {
     },
     {
       q: "Wat kost een bedrijfshal in Maasmechelen?",
-      a: "De prijs hangt af van het type constructie, de isolatiegraad en de afwerking. Op Maaslandbodems kunnen specifieke funderingstechnieken vereist zijn - Bradico communiceert dit transparant vóór de offerte. Na een gratis terreinbezoek ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project.",
+      a: "De prijs hangt af van het type constructie, de isolatiegraad en de afwerking. Op Maaslandbodems kunnen specifieke funderingstechnieken vereist zijn - Bradico communiceert dit transparant vóór de offerte. Na een gratis terreinbezoek ontvangt u een bindende vaste-prijs offerte op maat van uw project.",
     },
     {
       q: "Heeft Bradico ervaring met bouwen op slappe bodems langs de Maas?",

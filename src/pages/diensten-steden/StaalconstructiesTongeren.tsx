@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Tongeren | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies in Tongeren en KMO-zone Overhaem? Bradico bouwt op vaste prijs, 20km van Maastricht. Actief langs de E313. Offerte binnen 48 uur.",
+  metaDesc: "Staalconstructies in Tongeren en KMO-zone Overhaem? Bradico bouwt op vaste prijs, 20km van Maastricht. Actief langs de E313. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-tongeren",
   h1: "Staalconstructies Tongeren",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -26,7 +26,7 @@ const data: ServiceCityData = {
 <p>Tongeren heeft een sterke erfgoedidentiteit. Bij projecten dichtbij het historisch centrum of op visueel gevoelige locaties houden we rekening met de architecturale context. We kunnen staalconstructies voorzien van gevelbekleding in kleur, textuur of materiaal dat aansluit bij de omgeving. Dat vraagt om meer overleg maar het resultaat is een gebouw dat zowel functioneel als contextueel correct is.</p>
 
 <h2>Offerte aanvragen in Tongeren</h2>
-<p>Wilt u een staalconstructie laten bouwen in Tongeren of de omliggende gemeenten? Bel ons voor een vrijblijvend gesprek. Na terreinbezoek ontvangt u een vaste-prijs offerte binnen 48 uur.</p>`,
+<p>Wilt u een staalconstructie laten bouwen in Tongeren of de omliggende gemeenten? Bel ons voor een vrijblijvend gesprek. Na terreinbezoek ontvangt u een vaste-prijs offerte.</p>`,
   why: [
     { t: "Grensregio expertise", d: "Bradico bouwt voor bedrijven die zowel in Belgie als Nederland actief zijn - we kennen de grenscontext rond Tongeren en Maastricht." },
     { t: "Kleine en middelgrote projecten", d: "Van 200 m2 werkplaats tot 2.500 m2 opslaghal - we stemmen de constructie af op uw schaal en budget." },

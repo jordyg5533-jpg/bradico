@@ -6,7 +6,7 @@ const signals = [
   { icon: Star, label: "5.0 Google Reviews", sub: "Bekijk onze beoordelingen" },
   { icon: Award, label: "Erkend aannemer", sub: "Geregistreerd in België" },
   { icon: Shield, label: "Vaste prijs garantie", sub: "Geen meerwerken, nooit" },
-  { icon: Clock, label: "Offerte binnen 48u", sub: "Na terreinbezoek" },
+  { icon: Clock, label: "Snelle bouwtijd", sub: "Prefab staalconstructie" },
   { icon: MapPin, label: "BE + NL Limburg", sub: "Actief grensoverschrijdend" },
 ];
 

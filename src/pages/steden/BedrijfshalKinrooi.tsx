@@ -3,7 +3,7 @@ import { CityPageTemplate, CityData } from "@/components/CityPageTemplate";
 const city: CityData = {
   stad: "Kinrooi",
   metaTitle: "Bedrijfshal Bouwen Kinrooi - lokale aannemer, vaste prijs | Bradico",
-  metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Kinrooi? Bradico is gevestigd in Kinrooi en levert sleutelklaar op vaste prijs. Offerte binnen 48 uur.",
+  metaDesc: "Bedrijfshal of staalconstructie laten bouwen in Kinrooi? Bradico is gevestigd in Kinrooi en levert sleutelklaar op vaste prijs. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/bedrijfshal-kinrooi",
   intro: "Bradico is uw lokale aannemer voor bedrijfshallen, loodsen en staalconstructies in Kinrooi. Als erkend aannemer gevestigd op de Venlosesteenweg in Kinrooi kennen we de regio als geen ander - van vergunningsaanvragen bij de gemeente tot de specifieke terreinomstandigheden aan de Maas.",
   body: `<p>Kinrooi is een groeiende gemeente in Oost-Limburg, centraal gelegen aan de Nederlandse grens. Steeds meer ondernemers kiezen voor Kinrooi als vestigingsplaats - lage grondprijzen, goede verbindingen met Eindhoven, Roermond en Antwerpen, en volop ruimte voor nieuwe bedrijventerreinen.</p>

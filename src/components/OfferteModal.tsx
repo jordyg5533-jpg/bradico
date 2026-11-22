@@ -2,7 +2,16 @@ import { useState, useEffect } from "react";
 import { X, Check, Phone, ArrowRight, Loader2, Lock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { isGeldigTelefoon, isGeldigEmail, TELEFOON_FOUT, EMAIL_FOUT } from "@/lib/contactvalidatie";
+
 const FORMSPREE = "https://formspree.io/f/xjgzkpno";
+
+const VELD =
+  "w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all";
+const VELD_FOUT =
+  "w-full rounded-xl border border-red-500 bg-background px-3.5 py-2.5 text-sm outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/15 transition-all";
+
+type VeldFouten = { telefoon?: string; email?: string };
 
 let _setOpen: ((v: boolean) => void) | null = null;
 export const openOfferteModal = () => { _setOpen?.(true); };
@@ -47,6 +56,7 @@ function ThankYou({ onClose }: { onClose: () => void }) {
 function OfferteForm({ onSuccess, onClose }: { onSuccess: () => void; onClose: () => void }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [fouten, setFouten] = useState<VeldFouten>({});
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -55,10 +65,26 @@ function OfferteForm({ onSuccess, onClose }: { onSuccess: () => void; onClose: (
     const form = e.currentTarget;
     const honeypot = (form.elements.namedItem("_gotcha") as HTMLInputElement).value;
     if (honeypot) return;
+
+    const telefoon = (form.elements.namedItem("telefoon") as HTMLInputElement).value.trim();
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
+
+    const veldFouten: VeldFouten = {};
+    if (!isGeldigTelefoon(telefoon)) veldFouten.telefoon = TELEFOON_FOUT;
+    if (!isGeldigEmail(email)) veldFouten.email = EMAIL_FOUT;
+    setFouten(veldFouten);
+    if (veldFouten.telefoon || veldFouten.email) {
+      setLoading(false);
+      const eerste = veldFouten.telefoon ? "telefoon" : "email";
+      (form.elements.namedItem(eerste) as HTMLInputElement).focus();
+      return;
+    }
+
     const data = {
       _subject: "Nieuwe offerte-aanvraag via bv-bradico.be",
       naam: (form.elements.namedItem("naam") as HTMLInputElement).value,
-      telefoon: (form.elements.namedItem("telefoon") as HTMLInputElement).value,
+      telefoon,
+      email,
       gemeente: (form.elements.namedItem("gemeente") as HTMLInputElement).value,
       type: (form.elements.namedItem("type") as HTMLSelectElement).value,
       bericht: (form.elements.namedItem("bericht") as HTMLTextAreaElement).value,
@@ -83,7 +109,7 @@ function OfferteForm({ onSuccess, onClose }: { onSuccess: () => void; onClose: (
       <div className="flex items-center justify-between px-6 py-5 border-b" style={{ background: "linear-gradient(135deg, #070c18 0%, #0e1e35 100%)" }}>
         <div>
           <h2 className="text-lg font-black text-white">Gratis offerte aanvragen</h2>
-          <p className="text-xs text-white/55 mt-0.5">Reactie binnen 48 uur - volledig vrijblijvend</p>
+          <p className="text-xs text-white/55 mt-0.5">Volledig vrijblijvend, zonder verplichtingen</p>
         </div>
         <button onClick={onClose} className="ml-4 text-white/50 hover:text-white transition-colors" aria-label="Sluiten">
           <X className="h-5 w-5" />
@@ -94,26 +120,50 @@ function OfferteForm({ onSuccess, onClose }: { onSuccess: () => void; onClose: (
         <div className="grid gap-3 sm:grid-cols-2">
           <div>
             <label className="mb-1.5 block text-xs font-semibold text-foreground">Naam *</label>
-            <input required type="text" name="naam" placeholder="Jan Janssen"
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all" />
+            <input required type="text" name="naam" autoComplete="name" placeholder="Jan Janssen" className={VELD} />
           </div>
           <div>
             <label className="mb-1.5 block text-xs font-semibold text-foreground">Telefoon *</label>
-            <input required type="tel" name="telefoon" placeholder="+32 ..."
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all" />
+            <input
+              required
+              type="tel"
+              name="telefoon"
+              inputMode="tel"
+              autoComplete="tel"
+              placeholder="0472 81 29 52"
+              aria-invalid={!!fouten.telefoon}
+              onInput={() => setFouten((p) => ({ ...p, telefoon: undefined }))}
+              className={fouten.telefoon ? VELD_FOUT : VELD}
+            />
+            {fouten.telefoon && <p className="mt-1 text-[11px] text-red-600">{fouten.telefoon}</p>}
           </div>
         </div>
 
-        <div>
-          <label className="mb-1.5 block text-xs font-semibold text-foreground">Gemeente *</label>
-          <input required type="text" name="gemeente" placeholder="Bijv. Hasselt, Venlo, Antwerpen..."
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 transition-all" />
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label className="mb-1.5 block text-xs font-semibold text-foreground">E-mail *</label>
+            <input
+              required
+              type="email"
+              name="email"
+              inputMode="email"
+              autoComplete="email"
+              placeholder="jan@bedrijf.be"
+              aria-invalid={!!fouten.email}
+              onInput={() => setFouten((p) => ({ ...p, email: undefined }))}
+              className={fouten.email ? VELD_FOUT : VELD}
+            />
+            {fouten.email && <p className="mt-1 text-[11px] text-red-600">{fouten.email}</p>}
+          </div>
+          <div>
+            <label className="mb-1.5 block text-xs font-semibold text-foreground">Gemeente *</label>
+            <input required type="text" name="gemeente" placeholder="Bijv. Hasselt, Venlo, Antwerpen..." className={VELD} />
+          </div>
         </div>
 
         <div>
           <label className="mb-1.5 block text-xs font-semibold text-foreground">Type project</label>
-          <select name="type"
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 cursor-pointer transition-all">
+          <select name="type" className={`${VELD} cursor-pointer`}>
             <option value="">Kies een type...</option>
             <option>Bedrijfshal nieuwbouw</option>
             <option>Staalconstructie</option>
@@ -126,8 +176,7 @@ function OfferteForm({ onSuccess, onClose }: { onSuccess: () => void; onClose: (
 
         <div>
           <label className="mb-1.5 block text-xs font-semibold text-foreground">Bericht (optioneel)</label>
-          <textarea name="bericht" rows={3} placeholder="Kort beschrijven wat u zoekt..."
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/15 resize-none transition-all" />
+          <textarea name="bericht" rows={3} placeholder="Kort beschrijven wat u zoekt..." className={`${VELD} resize-none`} />
         </div>
 
         <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />

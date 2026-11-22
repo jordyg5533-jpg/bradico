@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { ArrowRight, Lock, Check, Loader2 } from "lucide-react";
+import { isGeldigTelefoon, isGeldigEmail, TELEFOON_FOUT, EMAIL_FOUT } from "@/lib/contactvalidatie";
 
 const TRUST = ["Geen verplichtingen", "Reactie binnen 24u", "Vaste prijs garantie"];
+
+const VELD =
+  "w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15";
+const VELD_FOUT =
+  "w-full rounded-xl border border-red-500 bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-red-500 focus:ring-2 focus:ring-red-500/15";
+
+type VeldFouten = { telefoon?: string; email?: string };
 
 export const QuoteForm = () => {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [fouten, setFouten] = useState<VeldFouten>({});
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -15,10 +24,26 @@ export const QuoteForm = () => {
     const form = e.currentTarget;
     const honeypot = (form.elements.namedItem("_gotcha") as HTMLInputElement).value;
     if (honeypot) return;
+
+    const telefoon = (form.elements.namedItem("telefoon") as HTMLInputElement).value.trim();
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
+
+    const veldFouten: VeldFouten = {};
+    if (!isGeldigTelefoon(telefoon)) veldFouten.telefoon = TELEFOON_FOUT;
+    if (!isGeldigEmail(email)) veldFouten.email = EMAIL_FOUT;
+    setFouten(veldFouten);
+    if (veldFouten.telefoon || veldFouten.email) {
+      setLoading(false);
+      const eerste = veldFouten.telefoon ? "telefoon" : "email";
+      (form.elements.namedItem(eerste) as HTMLInputElement).focus();
+      return;
+    }
+
     const data = {
       _subject: "Nieuwe offerte-aanvraag via bv-bradico.be",
       naam: (form.elements.namedItem("naam") as HTMLInputElement).value,
-      telefoon: (form.elements.namedItem("telefoon") as HTMLInputElement).value,
+      telefoon,
+      email,
       gemeente: (form.elements.namedItem("gemeente") as HTMLInputElement).value,
       type: (form.elements.namedItem("type") as HTMLSelectElement).value,
       bericht: (form.elements.namedItem("bericht") as HTMLTextAreaElement).value,
@@ -55,11 +80,11 @@ export const QuoteForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl border bg-card shadow-card overflow-hidden">
+    <form onSubmit={handleSubmit} noValidate={false} className="rounded-2xl border bg-card shadow-card overflow-hidden">
       {/* header */}
       <div className="px-6 pt-6 pb-5 border-b border-border">
         <h3 className="text-lg font-black text-foreground">Gratis offerte aanvragen</h3>
-        <p className="mt-1 text-xs text-muted-foreground">Reactie binnen 48 uur  -  volledig vrijblijvend.</p>
+        <p className="mt-1 text-xs text-muted-foreground">Volledig vrijblijvend, zonder verplichtingen.</p>
       </div>
 
       <div className="p-6 space-y-4">
@@ -70,8 +95,9 @@ export const QuoteForm = () => {
               required
               type="text"
               name="naam"
+              autoComplete="name"
               placeholder="Jan Janssen"
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15"
+              className={VELD}
             />
           </div>
           <div>
@@ -80,29 +106,48 @@ export const QuoteForm = () => {
               required
               type="tel"
               name="telefoon"
-              placeholder="+32 ..."
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15"
+              inputMode="tel"
+              autoComplete="tel"
+              placeholder="0472 81 29 52"
+              aria-invalid={!!fouten.telefoon}
+              onInput={() => setFouten((p) => ({ ...p, telefoon: undefined }))}
+              className={fouten.telefoon ? VELD_FOUT : VELD}
+            />
+            {fouten.telefoon && <p className="mt-1 text-[11px] text-red-600">{fouten.telefoon}</p>}
+          </div>
+        </div>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            <label className="mb-1.5 block text-xs font-semibold text-foreground">E-mail *</label>
+            <input
+              required
+              type="email"
+              name="email"
+              inputMode="email"
+              autoComplete="email"
+              placeholder="jan@bedrijf.be"
+              aria-invalid={!!fouten.email}
+              onInput={() => setFouten((p) => ({ ...p, email: undefined }))}
+              className={fouten.email ? VELD_FOUT : VELD}
+            />
+            {fouten.email && <p className="mt-1 text-[11px] text-red-600">{fouten.email}</p>}
+          </div>
+          <div>
+            <label className="mb-1.5 block text-xs font-semibold text-foreground">Gemeente *</label>
+            <input
+              required
+              type="text"
+              name="gemeente"
+              placeholder="Bijv. Hasselt, Genk..."
+              className={VELD}
             />
           </div>
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs font-semibold text-foreground">Gemeente *</label>
-          <input
-            required
-            type="text"
-            name="gemeente"
-            placeholder="Bijv. Hasselt, Genk, Antwerpen..."
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15"
-          />
-        </div>
-
-        <div>
           <label className="mb-1.5 block text-xs font-semibold text-foreground">Type project</label>
-          <select
-            name="type"
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15 cursor-pointer"
-          >
+          <select name="type" className={`${VELD} cursor-pointer`}>
             <option value="">Kies een type...</option>
             <option>Bedrijfshal nieuwbouw</option>
             <option>Staalconstructie</option>
@@ -119,7 +164,7 @@ export const QuoteForm = () => {
             name="bericht"
             rows={3}
             placeholder="Kort beschrijven wat u zoekt..."
-            className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition-all focus:border-accent focus:ring-2 focus:ring-accent/15 resize-none"
+            className={`${VELD} resize-none`}
           />
         </div>
 

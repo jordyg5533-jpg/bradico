@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { MessageSquare, X, Send } from "lucide-react";
+import { isGeldigTelefoon, isGeldigEmail } from "@/lib/contactvalidatie";
 
-type Step = "dienst" | "type" | "urgentie" | "gemeente" | "naam" | "telefoon" | "done";
+type Step = "dienst" | "type" | "urgentie" | "gemeente" | "naam" | "telefoon" | "email" | "done";
 interface Message { from: "bot" | "user"; text: string; }
 
 const DIENSTEN = ["Bedrijfshal bouwen", "Staalconstructie", "Loods of magazijn", "Sandwichpanelen", "Gevelrenovatie", "Prijsvraag"];
@@ -34,7 +35,7 @@ export const ChatBot = () => {
   const [step, setStep] = useState<Step>("dienst");
   const [input, setInput] = useState("");
   const [started, setStarted] = useState(false);
-  const lead = useRef({ dienst: "", type: "", gemeente: "", naam: "" });
+  const lead = useRef({ dienst: "", type: "", gemeente: "", naam: "", telefoon: "" });
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -56,7 +57,7 @@ export const ChatBot = () => {
 
   useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages]);
   useEffect(() => {
-    if (step === "gemeente" || step === "naam" || step === "telefoon")
+    if (step === "gemeente" || step === "naam" || step === "telefoon" || step === "email")
       setTimeout(() => inputRef.current?.focus(), 100);
   }, [step]);
 
@@ -69,10 +70,28 @@ export const ChatBot = () => {
   const handleUrgentie = (u: string) => { addUser(u); delay(() => { addBot("In welke gemeente is het project gelegen?"); setStep("gemeente"); }); };
 
   const handleSubmit = () => {
-    const val = input.trim(); if (!val) return; setInput("");
+    const val = input.trim(); if (!val) return;
+
+    // Contactgegevens eerst valideren: geen lead zonder bruikbaar nummer en e-mailadres.
+    if (step === "telefoon" && !isGeldigTelefoon(val)) {
+      addUser(val); setInput("");
+      delay(() => addBot("Dat lijkt me geen geldig nummer. Mag ik het nog eens, bijv. 0472 81 29 52?"));
+      return;
+    }
+    if (step === "email" && !isGeldigEmail(val)) {
+      addUser(val); setInput("");
+      delay(() => addBot("Dat e-mailadres klopt niet helemaal. Mag ik het nog eens, bijv. jan@bedrijf.be?"));
+      return;
+    }
+
+    setInput("");
     if (step === "gemeente") { lead.current.gemeente = val; addUser(val); delay(() => { addBot("En hoe mag ik u noemen?"); setStep("naam"); }); }
     else if (step === "naam") { lead.current.naam = val; addUser(val); delay(() => { addBot(`Fijn, ${val}! Op welk nummer mogen we u terugbellen?`); setStep("telefoon"); }); }
     else if (step === "telefoon") {
+      lead.current.telefoon = val; addUser(val);
+      delay(() => { addBot("Perfect. En op welk e-mailadres mogen we de offerte bezorgen?"); setStep("email"); });
+    }
+    else if (step === "email") {
       addUser(val);
       fetch("https://formspree.io/f/xjgzkpno", {
         method: "POST",
@@ -80,7 +99,8 @@ export const ChatBot = () => {
         body: JSON.stringify({
           _subject: "Nieuwe lead via chatbot - bv-bradico.be",
           naam: lead.current.naam,
-          telefoon: val,
+          telefoon: lead.current.telefoon,
+          email: val,
           gemeente: lead.current.gemeente,
           type: lead.current.dienst,
           source: "chatbot",
@@ -93,8 +113,12 @@ export const ChatBot = () => {
     }
   };
 
-  const placeholder = step === "gemeente" ? "Bijv. Hasselt, Genk..." : step === "naam" ? "Uw naam" : "Uw telefoonnummer";
-  const showInput = step === "gemeente" || step === "naam" || step === "telefoon";
+  const placeholder =
+    step === "gemeente" ? "Bijv. Hasselt, Genk..."
+    : step === "naam" ? "Uw naam"
+    : step === "email" ? "jan@bedrijf.be"
+    : "0472 81 29 52";
+  const showInput = step === "gemeente" || step === "naam" || step === "telefoon" || step === "email";
 
   return (
     <>
@@ -125,7 +149,7 @@ export const ChatBot = () => {
             {step === "urgentie" && <Choices options={URGENTIE} onSelect={handleUrgentie} cols={1} />}
             {showInput && (
               <div className="flex gap-2">
-                <input ref={inputRef} type={step === "telefoon" ? "tel" : "text"} value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSubmit()} placeholder={placeholder} className="flex-1 rounded-xl border border-border bg-secondary px-3 py-2.5 text-sm outline-none focus:border-accent transition-colors" />
+                <input ref={inputRef} type={step === "telefoon" ? "tel" : step === "email" ? "email" : "text"} value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSubmit()} placeholder={placeholder} className="flex-1 rounded-xl border border-border bg-secondary px-3 py-2.5 text-sm outline-none focus:border-accent transition-colors" />
                 <button onClick={handleSubmit} className="rounded-xl px-3 py-2.5 text-white transition-opacity hover:opacity-90" style={{ background: "hsl(214 82% 56%)" }} aria-label="Verstuur"><Send className="h-4 w-4" /></button>
               </div>
             )}

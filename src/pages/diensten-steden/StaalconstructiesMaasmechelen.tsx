@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Maasmechelen | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies in Maasmechelen? Bradico is buurman: gevestigd in Kinrooi. E314, reconversie mijngebied, 10km van Maastricht. Offerte in 48 uur.",
+  metaDesc: "Staalconstructies in Maasmechelen? Bradico is buurman: gevestigd in Kinrooi. E314, reconversie mijngebied, 10km van Maastricht. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-maasmechelen",
   h1: "Staalconstructies Maasmechelen",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -26,7 +26,7 @@ const data: ServiceCityData = {
 <p>Omdat Bradico gevestigd is in Kinrooi, direct grenzend aan Maasmechelen, zijn we sneller ter plaatse dan welke andere aannemer ook. Terreinbezoeken kunnen dezelfde dag nog. Werfopvolging is intensiever omdat de afstand minimaal is. Dat vertaalt zich in minder communicatievertragingen en een vlottere uitvoering van uw project.</p>
 
 <h2>Offerte aanvragen in Maasmechelen</h2>
-<p>Wilt u een staalconstructie laten bouwen in Maasmechelen? Bel ons - we zijn er snel bij. Na terreinbezoek ontvangt u een vaste-prijs offerte binnen 48 uur.</p>`,
+<p>Wilt u een staalconstructie laten bouwen in Maasmechelen? Bel ons - we zijn er snel bij. Na terreinbezoek ontvangt u een vaste-prijs offerte.</p>`,
   why: [
     { t: "Buurman-voordeel", d: "Bradico zit in Kinrooi, direct naast Maasmechelen. Terreinbezoek binnen een uur, werfopvolging elke dag mogelijk." },
     { t: "Reconversie-ervaring", d: "We bouwen op voormalige mijnterreinen en kennen de specifieke uitdagingen van deze bodemgesteldheid." },

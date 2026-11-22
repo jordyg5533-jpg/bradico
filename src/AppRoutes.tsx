@@ -49,6 +49,8 @@ import IndustriebouwSintTruiden from "./pages/diensten/IndustriebouwSintTruiden"
 import IndustriebouwLommel from "./pages/diensten/IndustriebouwLommel";
 import IndustriebouwBeringen from "./pages/diensten/IndustriebouwBeringen";
 import IndustriebouwMaaseik from "./pages/diensten/IndustriebouwMaaseik";
+import IndustriebouwAntwerpen from "./pages/diensten/IndustriebouwAntwerpen";
+import StallenbouwLimburg from "./pages/diensten/StallenbouwLimburg";
 import OverBradico from "./pages/OverBradico";
 import WatKostEenBedrijfshalBouwen from "./pages/kennis/WatKostEenBedrijfshalBouwen";
 import StaalbouwVsBetonbouw from "./pages/kennis/StaalbouwVsBetonbouw";
@@ -81,6 +83,7 @@ export default function AppRoutes() {
           <Route path="/staalconstructies-limburg" element={<StaalconstructiesLimburg />} />
           <Route path="/bedrijfshallen-bouwen" element={<BedrijfshallenBouwen />} />
           <Route path="/loodsen-magazijnen" element={<LoodsenMagazijnen />} />
+          <Route path="/stallenbouw-limburg" element={<StallenbouwLimburg />} />
           <Route path="/sandwichpanelen" element={<Sandwichpanelen />} />
           <Route path="/gevelrenovatie-industrieel" element={<GevelrenovatieIndustrieel />} />
           {/* Steden */}
@@ -111,6 +114,7 @@ export default function AppRoutes() {
           <Route path="/industriebouw-lommel" element={<IndustriebouwLommel />} />
           <Route path="/industriebouw-beringen" element={<IndustriebouwBeringen />} />
           <Route path="/industriebouw-maaseik" element={<IndustriebouwMaaseik />} />
+          <Route path="/industriebouw-antwerpen" element={<IndustriebouwAntwerpen />} />
           {/* Kennis */}
           <Route path="/kennis" element={<KennisOverzicht />} />
           <Route path="/kennis/wat-kost-een-bedrijfshal-bouwen" element={<WatKostEenBedrijfshalBouwen />} />

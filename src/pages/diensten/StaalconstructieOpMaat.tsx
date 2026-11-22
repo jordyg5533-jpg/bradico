@@ -8,7 +8,7 @@ const service: ServiceData = {
   tagline: "Elk project is anders. Bradico ontwerpt en bouwt staalconstructies volledig op maat van uw activiteit, uw terrein en uw budget. Vaste prijs, geen meerwerken.",
   img: "/projects/bhal3.jpeg",
   imgAlt: "Staalconstructie op maat  -  Bradico Limburg industriebouw",
-  badges: ["Op maat", "Vaste prijs", "Offerte 48u", "BE + NL Limburg"],
+  badges: ["Op maat", "Vaste prijs", "Vrijblijvend", "BE + NL Limburg"],
   intro: `<p>Een staalconstructie op maat betekent dat het gebouw volledig afgestemd wordt op uw specifieke situatie: de grootte van uw terrein, de vereisten van uw activiteit, de gewenste vrije hoogte en overspanning, de isolatiegraad en de budgetmarge. Er zijn geen standaardoplossingen die voor elk project passen  -  Bradico ontwerpt altijd vertrekkend van uw noden.</p>
 <p>Van een kleine carport of overdekte werkruimte tot een grote industriële hal van meerdere duizenden m²  -  het maatwerk-principe blijft hetzelfde. U krijgt een constructie die precies doet wat u nodig heeft, gebouwd binnen de afgesproken prijs en timing.</p>`,
   body: `<h2>Waarom staalconstructie op maat?</h2>
@@ -35,7 +35,7 @@ const service: ServiceData = {
 <p><strong>Stap 1: Analyse van uw noden.</strong> In een eerste gesprek (telefonisch of ter plaatse) brengen we uw noden in kaart: gewenste afmetingen, activiteit, specifieke vereisten, tijdlijn en budget.</p>
 <p><strong>Stap 2: Terreinbezoek.</strong> Onze technici bezoeken het terrein, nemen maten op, beoordelen de bodemgesteldheid en de toegankelijkheid voor montage.</p>
 <p><strong>Stap 3: Technisch ontwerp.</strong> Op basis van de verzamelde gegevens maken wij een technisch ontwerp met staalplan, doorsnedes en maatschets. U ziet exact wat er gebouwd wordt voor u tekent.</p>
-<p><strong>Stap 4: Vaste offerte.</strong> Binnen 48 uur na terreinbezoek ontvangt u een gedetailleerde, vaste-prijs offerte. Geen richtprijzen, geen "onder voorbehoud"  -  een vaste prijs voor het volledige project.</p>
+<p><strong>Stap 4: Vaste offerte.</strong> Na het terreinbezoek ontvangt u een gedetailleerde, vaste-prijs offerte. Geen richtprijzen, geen "onder voorbehoud"  -  een vaste prijs voor het volledige project.</p>
 <p><strong>Stap 5: Vergunning.</strong> Wij begeleiden u door de vergunningsaanvraag en de contacten met de gemeente.</p>
 <p><strong>Stap 6: Prefabricage en montage.</strong> De staalprofielen worden geprefabriceerd in onze werkplaats. Op de werf monteert ons team het skelet en de gevelbeplating.</p>
 <p><strong>Stap 7: Oplevering.</strong> U ontvangt de sleutels met volledige technische documentatie en conformiteitsattesten.</p>
@@ -46,7 +46,7 @@ const service: ServiceData = {
     { nr: "01", title: "Analyse noden", desc: "Gesprek over uw project, activiteit, afmetingen en budget." },
     { nr: "02", title: "Terreinbezoek", desc: "Opmeting, bodemcheck, toegankelijkheid werf." },
     { nr: "03", title: "Technisch ontwerp", desc: "Staalplan, doorsnedes en maatschets op maat." },
-    { nr: "04", title: "Vaste offerte 48u", desc: "Gedetailleerde vaste-prijs offerte  -  geen richtprijzen." },
+    { nr: "04", title: "Vaste offerte", desc: "Gedetailleerde vaste-prijs offerte  -  geen richtprijzen." },
     { nr: "05", title: "Prefabricage", desc: "Staalprofielen geprefabriceerd in de werkplaats." },
     { nr: "06", title: "Oplevering", desc: "Sleutelklaar met technische documentatie." },
   ],
@@ -58,7 +58,7 @@ const service: ServiceData = {
   ],
   faq: [
     { q: "Wat kost een staalconstructie op maat?", a: "De prijs hangt volledig af van de afmetingen, het type gebouw, de bodemgesteldheid en de afwerking. Bradico werkt altijd met vaste prijzen na terreinbezoek - geen richtprijzen, geen meerwerken. Vraag een vrijblijvend terreinbezoek aan voor een exacte prijs." },
-    { q: "Hoe lang duurt het ontwerp van een staalconstructie op maat?", a: "Na het terreinbezoek heeft u binnen 48 uur een vaste-prijs offerte. Het volledige ontwerp en de technische tekeningen worden verder uitgewerkt na bevestiging van de opdracht." },
+    { q: "Hoe lang duurt het ontwerp van een staalconstructie op maat?", a: "Na het terreinbezoek heeft u een vaste-prijs offerte. Het volledige ontwerp en de technische tekeningen worden verder uitgewerkt na bevestiging van de opdracht." },
     { q: "Kan ik mijn eigen architect inschakelen?", a: "Ja, dat is mogelijk. Bradico werkt regelmatig samen met externe architecten en ingenieursbureaus. Wij verzorgen de technische staalconstructie op basis van de plannen." },
     { q: "Is het mogelijk een bestaande hal uit te breiden?", a: "Ja. Bij bestaande staalconstructies kan in de meeste gevallen een uitbreiding worden aangehecht. Bradico onderzoekt dit tijdens het terreinbezoek." },
   ],

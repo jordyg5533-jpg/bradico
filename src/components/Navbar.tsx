@@ -5,6 +5,7 @@ const diensten = [
   { label: "Staalconstructies", href: "/staalconstructies-limburg" },
   { label: "Bedrijfshallen", href: "/bedrijfshallen-bouwen" },
   { label: "Loodsen & magazijnen", href: "/loodsen-magazijnen" },
+  { label: "Stallenbouw & landbouw", href: "/stallenbouw-limburg" },
   { label: "Sandwichpanelen", href: "/sandwichpanelen" },
   { label: "Gevelrenovatie", href: "/gevelrenovatie-industrieel" },
 ];

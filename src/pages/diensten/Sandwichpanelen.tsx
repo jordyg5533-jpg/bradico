@@ -2,13 +2,13 @@ import { ServicePageTemplate, ServiceData } from "@/components/ServicePageTempla
 
 const service: ServiceData = {
   metaTitle: "Sandwichpanelen Plaatsen Limburg - isolatie & gevel | Bradico",
-  metaDesc: "Sandwichpanelen laten plaatsen in Limburg? Bradico levert en monteert dak- en gevelpanelen voor industriële gebouwen. Vaste prijs, offerte binnen 48 uur.",
+  metaDesc: "Sandwichpanelen laten plaatsen in Limburg? Bradico levert en monteert dak- en gevelpanelen voor industriële gebouwen. Vaste prijs, vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/sandwichpanelen",
   h1: "Sandwichpanelen plaatsen in Limburg",
-  tagline: "Dak- en gevelsandwichpanelen voor nieuwe hallen, renovaties en uitbreidingen. Bradico levert, monteert en werkt op vaste prijs - offerte binnen 48 uur.",
+  tagline: "Dak- en gevelsandwichpanelen voor nieuwe hallen, renovaties en uitbreidingen. Bradico levert, monteert en werkt op vaste prijs - vrijblijvende offerte.",
   img: "/projects/gvl5.jpeg",
   imgAlt: "Sandwichpanelen plaatsen Limburg - Bradico",
-  badges: ["Levering + montage", "Vaste prijs", "Nieuwbouw & renovatie", "Offerte 48u"],
+  badges: ["Levering + montage", "Vaste prijs", "Nieuwbouw & renovatie", "Vrijblijvend"],
   intro: `<p>Sandwichpanelen zijn het meest gebruikte afwerkingsmateriaal voor industriële gebouwen. Ze combineren een hoge isolatiewaarde met een strakke uitstraling, snelle montage en minimaal onderhoud. Bradico levert en plaatst sandwichpanelen voor dak en gevel - bij nieuwbouw, renovatie en uitbreiding.</p>
 <p>We werken met kwaliteitspanelen van bewezen leveranciers en onze eigen gespecialiseerde montageploegen. Elk project wordt vooraf technisch uitgetekend zodat panelen perfect aansluiten en de isolatiewaarden worden gehaald.</p>`,
   body: `<h2>Wat zijn sandwichpanelen?</h2>
@@ -21,7 +21,7 @@ const service: ServiceData = {
   steps: [
     { nr: "01", title: "Opmeting", desc: "Technische opmeting van gevel of dak op locatie." },
     { nr: "02", title: "Technisch plan", desc: "Paneel-lay-out + aansluitdetails uitgetekend." },
-    { nr: "03", title: "Vaste offerte", desc: "Gedetailleerde vaste-prijs offerte binnen 48u." },
+    { nr: "03", title: "Vaste offerte", desc: "Gedetailleerde vaste-prijs offerte." },
     { nr: "04", title: "Levering & montage", desc: "Eigen montageploegen, efficiënte plaatsing." },
     { nr: "05", title: "Oplevering", desc: "Controle waterdichtheid + volledige documentatie." },
   ],
@@ -32,7 +32,7 @@ const service: ServiceData = {
     { t: "Vaste prijs", d: "Na opmeting weet u exact wat het kost - geen meerwerken." },
   ],
   faq: [
-    { q: "Wat kost sandwichpanelen laten plaatsen?", a: "De prijs hangt af van het type paneel, de dikte, de oppervlakte en de toegankelijkheid. Na een terreinbezoek ontvangt u binnen 48 uur een vaste-prijs offerte." },
+    { q: "Wat kost sandwichpanelen laten plaatsen?", a: "De prijs hangt af van het type paneel, de dikte, de oppervlakte en de toegankelijkheid. Na een terreinbezoek ontvangt u een vaste-prijs offerte." },
     { q: "Welke isolatiewaarde halen sandwichpanelen?", a: "Afhankelijk van de kerndikte en het isolatiemateriaal (PUR, PIR, minerale wol) worden U-waarden van 0,20 tot 0,50 W/m²K gehaald - ruim voldoende voor industrieel gebruik." },
     { q: "Kan Bradico ook bestaande panelen vervangen?", a: "Ja. Bij renovatieprojecten vervangen we beschadigde of verouderde panelen. We analyseren de bestaande situatie en adviseren de beste aanpak." },
     { q: "Hoe lang duurt de plaatsing?", a: "Voor een gemiddeld project van enkele honderd m² rekent u op enkele werkdagen. Grotere projecten plannen we in overleg." },

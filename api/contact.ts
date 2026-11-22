@@ -11,7 +11,7 @@ export default async function handler(req: Request): Promise<Response> {
     return Response.json({ error: "Invalid body" }, { status: 400 });
   }
 
-  const { naam, telefoon, gemeente, type, bericht, source } = body;
+  const { naam, telefoon, email, gemeente, type, bericht, source } = body;
   const isChatbot = source === "chatbot";
 
   const subject = isChatbot
@@ -21,6 +21,7 @@ export default async function handler(req: Request): Promise<Response> {
   const rows = [
     ["Naam", naam],
     ["Telefoon", `<a href="tel:${telefoon}">${telefoon}</a>`],
+    email ? ["E-mail", `<a href="mailto:${email}">${email}</a>`] : null,
     ["Gemeente", gemeente],
     type ? ["Type project", type] : null,
     bericht ? ["Bericht", bericht] : null,

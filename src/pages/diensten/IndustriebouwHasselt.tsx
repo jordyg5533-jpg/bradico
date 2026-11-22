@@ -2,7 +2,7 @@ import { ServicePageTemplate, ServiceData } from "@/components/ServicePageTempla
 
 const service: ServiceData = {
   metaTitle: "Industriebouw Hasselt | Bedrijfshallen & Staalconstructies op Maat | Bradico",
-  metaDesc: "Industriebouw in Hasselt: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Erkend aannemer, vergunning inbegrepen, sleutelklaar. Offerte binnen 48 uur.",
+  metaDesc: "Industriebouw in Hasselt: Bradico bouwt bedrijfshallen, loodsen en staalconstructies op vaste prijs. Erkend aannemer, vergunning inbegrepen, sleutelklaar. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/industriebouw-hasselt",
   h1: "Industriebouw in Hasselt  -  bedrijfshallen & staalconstructies op maat",
   tagline: "Bradico is uw erkend aannemer voor industriebouw in Hasselt en de wijde omgeving. Van de vergunningsaanvraag tot de sleutelklare oplevering van uw bedrijfshal of loods  -  vaste prijs, één aanspreekpunt.",
@@ -31,7 +31,7 @@ const service: ServiceData = {
 <p>Naast Hasselt zelf is Bradico actief in de omliggende gemeenten: Genk, Bilzen, Sint-Truiden, Tongeren, Lummen, Heusden-Zolder en Beringen. Bekijk ook onze pagina <a href="/industriebouw-limburg">industriebouw Limburg</a> voor een volledig overzicht van ons werkgebied, of neem contact op voor een gratis terreinbezoek.</p>`,
   steps: [
     { nr: "01", title: "Gratis terreinbezoek Hasselt", desc: "Bradico komt ter plaatse in Hasselt of omgeving. We bespreken uw noden, bekijken het terrein en beoordelen de bodemcondities voor uw industrieel bouwproject." },
-    { nr: "02", title: "Vaste-prijs offerte", desc: "Binnen 48 uur een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst  -  geen meerwerken of factuurverrassingen achteraf." },
+    { nr: "02", title: "Vaste-prijs offerte", desc: "Een gedetailleerde vaste-prijs offerte. Alle posten uitgesplitst  -  geen meerwerken of factuurverrassingen achteraf." },
     { nr: "03", title: "Vergunningsaanvraag Hasselt", desc: "Bradico coördineert de architect, EPB-studie en het dossier bij Stad Hasselt of de deputatie. U volgt niets zelf op." },
     { nr: "04", title: "Staalconstructie & fundering", desc: "Uitvoering met eigen ploegen: fundering op maat, montage staalstructuur, sandwichpanelen wand en dak." },
     { nr: "05", title: "Sleutelklare oplevering", desc: "Poorten, ramen, technische afwerking en keuringen  -  volledig sleutelklaar opgeleverd in Hasselt op de afgesproken datum." },
@@ -49,7 +49,7 @@ const service: ServiceData = {
     },
     {
       q: "Wat kost een bedrijfshal bouwen in Hasselt?",
-      a: "De prijs voor een industrieel gebouw in Hasselt hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Elke situatie is anders. Na een gratis terreinbezoek in Hasselt ontvangt u binnen 48 uur een bindende vaste-prijs offerte op maat van uw project.",
+      a: "De prijs voor een industrieel gebouw in Hasselt hangt af van het type constructie, de isolatiegraad, de bodemgesteldheid en de afwerking. Elke situatie is anders. Na een gratis terreinbezoek in Hasselt ontvangt u een bindende vaste-prijs offerte op maat van uw project.",
     },
     {
       q: "Regelt Bradico de vergunning bij Stad Hasselt?",

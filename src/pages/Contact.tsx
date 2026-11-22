@@ -14,10 +14,10 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact - Bradico Bedrijfshallen & Staalconstructies Limburg</title>
-        <meta name="description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Reactie binnen 48 uur." />
+        <meta name="description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Vrijblijvend en zonder verplichtingen." />
         <link rel="canonical" href="https://www.bv-bradico.be/contact" />
         <meta property="og:title" content="Contact - Bradico Bedrijfshallen & Staalconstructies Limburg" />
-        <meta property="og:description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Reactie binnen 48 uur." />
+        <meta property="og:description" content="Neem contact op met Bradico voor een vrijblijvende offerte. Bedrijfshallen, loodsen en staalconstructies in Limburg op vaste prijs. Vrijblijvend en zonder verplichtingen." />
         <meta property="og:url" content="https://www.bv-bradico.be/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="nl_BE" />
@@ -42,7 +42,7 @@ export default function Contact() {
             <motion.div className="max-w-2xl text-white" variants={fadeUp} initial="hidden" animate="show">
               <h1 className="text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl">Neem contact op</h1>
               <p className="mt-4 text-base text-white/70 leading-relaxed">
-                Vraag een vrijblijvende offerte aan of stel uw vraag. We plannen snel een terreinbezoek en bezorgen u binnen 48 uur een gedetailleerde vaste-prijs offerte.
+                Vraag een vrijblijvende offerte aan of stel uw vraag. We plannen snel een terreinbezoek en bezorgen u een gedetailleerde vaste-prijs offerte.
               </p>
             </motion.div>
           </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Bereikbaarheid</p>
                       <p className="mt-1 text-sm font-semibold text-foreground">Ma-Vr: 07:00-18:00</p>
-                      <p className="text-sm text-muted-foreground">Za: 08:00-12:00 - Offerte altijd binnen 48u</p>
+                      <p className="text-sm text-muted-foreground">Za: 08:00-12:00</p>
                     </div>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Wat kost een bedrijfshal laten bouwen?", "acceptedAnswer": { "@type": "Answer", "text": "De prijs van een bedrijfshal hangt af van de afmetingen, het type constructie en de afwerking. Bradico werkt altijd met een vaste prijs - na terreinbezoek ontvangt u binnen 48 uur een gedetailleerde offerte zonder verborgen kosten." } },
+    { "@type": "Question", "name": "Wat kost een bedrijfshal laten bouwen?", "acceptedAnswer": { "@type": "Answer", "text": "De prijs van een bedrijfshal hangt af van de afmetingen, het type constructie en de afwerking. Bradico werkt altijd met een vaste prijs - na terreinbezoek ontvangt u een gedetailleerde offerte zonder verborgen kosten." } },
     { "@type": "Question", "name": "Hoe lang duurt het bouwen van een bedrijfshal?", "acceptedAnswer": { "@type": "Answer", "text": "Een gemiddelde bedrijfshal wordt in 8 tot 16 weken opgeleverd, afhankelijk van de omvang en vergunningsprocedure." } },
     { "@type": "Question", "name": "Regelt Bradico ook de bouwvergunning?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Wij begeleiden u door het volledige vergunningsproces. Van aanvraag tot goedkeuring - dat is deel van onze totaalformule." } },
     { "@type": "Question", "name": "Wat zijn sandwichpanelen en waarvoor worden ze gebruikt?", "acceptedAnswer": { "@type": "Answer", "text": "Sandwichpanelen zijn isolerende bouwelementen voor gevels en daken. Ze bieden uitstekende thermische isolatie, zijn snel te plaatsen en geschikt voor zowel nieuwbouw als renovatie van industriële gebouwen." } },
@@ -32,7 +32,7 @@ const Index = () => (
   <>
     <Helmet>
       <title>Industriebouw & Staalconstructies Limburg | Bedrijfshallen | Bradico</title>
-      <meta name="description" content="Bradico - erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Vaste prijs, sleutelklaar. Offerte binnen 48 uur." />
+      <meta name="description" content="Bradico - erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg. Vaste prijs, sleutelklaar. Vrijblijvende offerte." />
       <link rel="canonical" href="https://www.bv-bradico.be/" />
       <meta property="og:title" content="Industriebouw & Staalconstructies Limburg | Bedrijfshallen | Bradico" />
       <meta property="og:description" content="Erkend aannemer voor industriebouw, bedrijfshallen en staalconstructies in Limburg en Vlaanderen. Vaste prijs, sleutelklaar." />

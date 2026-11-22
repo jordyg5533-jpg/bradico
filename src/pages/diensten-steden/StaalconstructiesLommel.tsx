@@ -2,7 +2,7 @@ import { ServiceCityPageTemplate, ServiceCityData } from "@/components/ServiceCi
 
 const data: ServiceCityData = {
   metaTitle: "Staalconstructies Lommel | Bradico - Erkend aannemer",
-  metaDesc: "Staalconstructies in Lommel en Noord-Limburg? Bradico bouwt langs de E34 richting Eindhoven. LRM-zone, Lommel-Noord. Vaste prijs. Offerte binnen 48 uur.",
+  metaDesc: "Staalconstructies in Lommel en Noord-Limburg? Bradico bouwt langs de E34 richting Eindhoven. LRM-zone, Lommel-Noord. Vaste prijs. Vrijblijvende offerte.",
   canonical: "https://www.bv-bradico.be/staalconstructies-lommel",
   h1: "Staalconstructies Lommel",
   service: { name: "Staalconstructies", href: "/staalconstructies-limburg" },
@@ -26,7 +26,7 @@ const data: ServiceCityData = {
 <p>Naast nieuwbouw is er in Lommel ook veel vraag naar uitbreidingen van bestaande staalconstructies. Een bestaande hal van 800 m2 die wordt uitgebreid met 400 m2 extra opslagruimte, of een verouderd dak dat wordt vervangen door geïsoleerde sandwichpanelen - dat zijn projecten die Bradico regelmatig uitvoert. We stemmen de uitbreiding af op de bestaande constructie en zorgen voor een naadloze integratie.</p>
 
 <h2>Offerte aanvragen in Lommel</h2>
-<p>Heeft u een bouwproject in Lommel of de omliggende gemeenten? Bel ons voor een eerste gesprek of vul het formulier hieronder in. Na terreinbezoek ontvangt u een vaste-prijs offerte binnen 48 uur.</p>`,
+<p>Heeft u een bouwproject in Lommel of de omliggende gemeenten? Bel ons voor een eerste gesprek of vul het formulier hieronder in. Na terreinbezoek ontvangt u een vaste-prijs offerte.</p>`,
   why: [
     { t: "LRM-kennis", d: "Bradico is vertrouwd met de LRM-procedures en subsidie-instrumenten die van toepassing zijn op industriebouw in Noord-Limburg." },
     { t: "Grens met Nederland", d: "Op 15 km van de grens bouwen we voor bedrijven die zowel de Belgische als de Nederlandse markt bedienen." },
